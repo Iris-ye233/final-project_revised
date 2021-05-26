@@ -1,0 +1,8 @@
+prefix=/home/yedi/ros_ws/devel
+
+Name: irb140_description
+Description: Description of irb140_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp

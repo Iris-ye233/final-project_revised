@@ -1,0 +1,8 @@
+prefix=/home/yedi/ros_ws/devel
+
+Name: mobot_with_plugin
+Description: Description of mobot_with_plugin
+Version: 0.0.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/yedi/ros_ws/devel
+
+Name: cwru_sticky_fingers
+Description: Description of cwru_sticky_fingers
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib -lcwru_sticky_fingers
+Requires: roscpp gazebo_ros roscpp gazebo_ros

@@ -1,0 +1,8 @@
+prefix=/home/yedi/ros_ws/install
+
+Name: irb140_fk_ik
+Description: Description of irb140_fk_ik
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lirb140_fk_ik
+Requires: roscpp std_msgs tf

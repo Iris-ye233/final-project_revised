@@ -1,0 +1,8 @@
+prefix=/home/yedi/ros_ws/devel
+
+Name: irb140_path_cmd
+Description: Description of irb140_path_cmd
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: control_msgs trajectory_msgs roscpp std_msgs sensor_msgs
