@@ -56,18 +56,6 @@ CMAKE_BINARY_DIR = /home/yedi/ros_ws/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -79,6 +67,16 @@ install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # Special rule for the target install
 install: preinstall
@@ -92,16 +90,16 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
 
-# Special rule for the target test
-test/fast: test
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
 
-.PHONY : test/fast
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -114,26 +112,28 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
 
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
+# Special rule for the target test
+test/fast: test
 
-.PHONY : rebuild_cache/fast
+.PHONY : test/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
 
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -168,334 +168,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_py.dir/rule:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_py.dir/rule
-.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_py.dir/rule
+learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/pub_des_state_path_client_3x3.dir/rule:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/pub_des_state_path_client_3x3.dir/rule
+.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/pub_des_state_path_client_3x3.dir/rule
 
 # Convenience name for target.
-mobot_pub_des_state_generate_messages_py: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_py.dir/rule
+pub_des_state_path_client_3x3: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/pub_des_state_path_client_3x3.dir/rule
 
-.PHONY : mobot_pub_des_state_generate_messages_py
+.PHONY : pub_des_state_path_client_3x3
 
 # fast build rule for target.
-mobot_pub_des_state_generate_messages_py/fast:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_py.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_py.dir/build
-.PHONY : mobot_pub_des_state_generate_messages_py/fast
-
-# Convenience name for target.
-learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_eus.dir/rule:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_eus.dir/rule
-.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-mobot_pub_des_state_generate_messages_eus: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_eus.dir/rule
-
-.PHONY : mobot_pub_des_state_generate_messages_eus
-
-# fast build rule for target.
-mobot_pub_des_state_generate_messages_eus/fast:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_eus.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_eus.dir/build
-.PHONY : mobot_pub_des_state_generate_messages_eus/fast
-
-# Convenience name for target.
-learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_gennodejs.dir/rule:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_gennodejs.dir/rule
-.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_gennodejs.dir/rule
-
-# Convenience name for target.
-mobot_pub_des_state_gennodejs: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_gennodejs.dir/rule
-
-.PHONY : mobot_pub_des_state_gennodejs
-
-# fast build rule for target.
-mobot_pub_des_state_gennodejs/fast:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_gennodejs.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_gennodejs.dir/build
-.PHONY : mobot_pub_des_state_gennodejs/fast
-
-# Convenience name for target.
-learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/glennan_pub_des_state_path_client.dir/rule:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/glennan_pub_des_state_path_client.dir/rule
-.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/glennan_pub_des_state_path_client.dir/rule
-
-# Convenience name for target.
-glennan_pub_des_state_path_client: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/glennan_pub_des_state_path_client.dir/rule
-
-.PHONY : glennan_pub_des_state_path_client
-
-# fast build rule for target.
-glennan_pub_des_state_path_client/fast:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/glennan_pub_des_state_path_client.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/glennan_pub_des_state_path_client.dir/build
-.PHONY : glennan_pub_des_state_path_client/fast
-
-# Convenience name for target.
-learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages.dir/rule:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages.dir/rule
-.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages.dir/rule
-
-# Convenience name for target.
-mobot_pub_des_state_generate_messages: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages.dir/rule
-
-.PHONY : mobot_pub_des_state_generate_messages
-
-# fast build rule for target.
-mobot_pub_des_state_generate_messages/fast:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages.dir/build
-.PHONY : mobot_pub_des_state_generate_messages/fast
-
-# Convenience name for target.
-learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_lisp.dir/rule:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_lisp.dir/rule
-.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-mobot_pub_des_state_generate_messages_lisp: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_lisp.dir/rule
-
-.PHONY : mobot_pub_des_state_generate_messages_lisp
-
-# fast build rule for target.
-mobot_pub_des_state_generate_messages_lisp/fast:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_lisp.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_lisp.dir/build
-.PHONY : mobot_pub_des_state_generate_messages_lisp/fast
-
-# Convenience name for target.
-learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_gencpp.dir/rule:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_gencpp.dir/rule
-.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_gencpp.dir/rule
-
-# Convenience name for target.
-mobot_pub_des_state_gencpp: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_gencpp.dir/rule
-
-.PHONY : mobot_pub_des_state_gencpp
-
-# fast build rule for target.
-mobot_pub_des_state_gencpp/fast:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_gencpp.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_gencpp.dir/build
-.PHONY : mobot_pub_des_state_gencpp/fast
-
-# Convenience name for target.
-learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_genlisp.dir/rule:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_genlisp.dir/rule
-.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_genlisp.dir/rule
-
-# Convenience name for target.
-mobot_pub_des_state_genlisp: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_genlisp.dir/rule
-
-.PHONY : mobot_pub_des_state_genlisp
-
-# fast build rule for target.
-mobot_pub_des_state_genlisp/fast:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_genlisp.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_genlisp.dir/build
-.PHONY : mobot_pub_des_state_genlisp/fast
-
-# Convenience name for target.
-learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/_mobot_pub_des_state_generate_messages_check_deps_path.dir/rule:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/_mobot_pub_des_state_generate_messages_check_deps_path.dir/rule
-.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/_mobot_pub_des_state_generate_messages_check_deps_path.dir/rule
-
-# Convenience name for target.
-_mobot_pub_des_state_generate_messages_check_deps_path: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/_mobot_pub_des_state_generate_messages_check_deps_path.dir/rule
-
-.PHONY : _mobot_pub_des_state_generate_messages_check_deps_path
-
-# fast build rule for target.
-_mobot_pub_des_state_generate_messages_check_deps_path/fast:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/_mobot_pub_des_state_generate_messages_check_deps_path.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/_mobot_pub_des_state_generate_messages_check_deps_path.dir/build
-.PHONY : _mobot_pub_des_state_generate_messages_check_deps_path/fast
-
-# Convenience name for target.
-learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/_mobot_pub_des_state_generate_messages_check_deps_integer_query.dir/rule:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/_mobot_pub_des_state_generate_messages_check_deps_integer_query.dir/rule
-.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/_mobot_pub_des_state_generate_messages_check_deps_integer_query.dir/rule
-
-# Convenience name for target.
-_mobot_pub_des_state_generate_messages_check_deps_integer_query: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/_mobot_pub_des_state_generate_messages_check_deps_integer_query.dir/rule
-
-.PHONY : _mobot_pub_des_state_generate_messages_check_deps_integer_query
-
-# fast build rule for target.
-_mobot_pub_des_state_generate_messages_check_deps_integer_query/fast:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/_mobot_pub_des_state_generate_messages_check_deps_integer_query.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/_mobot_pub_des_state_generate_messages_check_deps_integer_query.dir/build
-.PHONY : _mobot_pub_des_state_generate_messages_check_deps_integer_query/fast
-
-# Convenience name for target.
-learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/starting_pen_pub_des_state_path_client.dir/rule:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/starting_pen_pub_des_state_path_client.dir/rule
-.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/starting_pen_pub_des_state_path_client.dir/rule
-
-# Convenience name for target.
-starting_pen_pub_des_state_path_client: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/starting_pen_pub_des_state_path_client.dir/rule
-
-.PHONY : starting_pen_pub_des_state_path_client
-
-# fast build rule for target.
-starting_pen_pub_des_state_path_client/fast:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/starting_pen_pub_des_state_path_client.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/starting_pen_pub_des_state_path_client.dir/build
-.PHONY : starting_pen_pub_des_state_path_client/fast
-
-# Convenience name for target.
-learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_package.dir/rule:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_package.dir/rule
-.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_package.dir/rule
-
-# Convenience name for target.
-mobot_pub_des_state_package: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_package.dir/rule
-
-.PHONY : mobot_pub_des_state_package
-
-# fast build rule for target.
-mobot_pub_des_state_package/fast:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_package.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_package.dir/build
-.PHONY : mobot_pub_des_state_package/fast
-
-# Convenience name for target.
-learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_geneus.dir/rule:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_geneus.dir/rule
-.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_geneus.dir/rule
-
-# Convenience name for target.
-mobot_pub_des_state_geneus: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_geneus.dir/rule
-
-.PHONY : mobot_pub_des_state_geneus
-
-# fast build rule for target.
-mobot_pub_des_state_geneus/fast:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_geneus.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_geneus.dir/build
-.PHONY : mobot_pub_des_state_geneus/fast
-
-# Convenience name for target.
-learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/open_loop_controller.dir/rule:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/open_loop_controller.dir/rule
-.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/open_loop_controller.dir/rule
-
-# Convenience name for target.
-open_loop_controller: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/open_loop_controller.dir/rule
-
-.PHONY : open_loop_controller
-
-# fast build rule for target.
-open_loop_controller/fast:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/open_loop_controller.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/open_loop_controller.dir/build
-.PHONY : open_loop_controller/fast
-
-# Convenience name for target.
-learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/rule:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/rule
-.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/rule
-
-# Convenience name for target.
-mobot_pub_des_state: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/rule
-
-.PHONY : mobot_pub_des_state
-
-# fast build rule for target.
-mobot_pub_des_state/fast:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/build
-.PHONY : mobot_pub_des_state/fast
-
-# Convenience name for target.
-learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state2.dir/rule:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state2.dir/rule
-.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state2.dir/rule
-
-# Convenience name for target.
-mobot_pub_des_state2: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state2.dir/rule
-
-.PHONY : mobot_pub_des_state2
-
-# fast build rule for target.
-mobot_pub_des_state2/fast:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state2.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state2.dir/build
-.PHONY : mobot_pub_des_state2/fast
-
-# Convenience name for target.
-learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_startup.dir/rule:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_startup.dir/rule
-.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_startup.dir/rule
-
-# Convenience name for target.
-mobot_pub_des_state_startup: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_startup.dir/rule
-
-.PHONY : mobot_pub_des_state_startup
-
-# fast build rule for target.
-mobot_pub_des_state_startup/fast:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_startup.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_startup.dir/build
-.PHONY : mobot_pub_des_state_startup/fast
-
-# Convenience name for target.
-learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_mobot_pub_des_state.dir/rule:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_mobot_pub_des_state.dir/rule
-.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_mobot_pub_des_state.dir/rule
-
-# Convenience name for target.
-diag_mobot_pub_des_state: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_mobot_pub_des_state.dir/rule
-
-.PHONY : diag_mobot_pub_des_state
-
-# fast build rule for target.
-diag_mobot_pub_des_state/fast:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_mobot_pub_des_state.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_mobot_pub_des_state.dir/build
-.PHONY : diag_mobot_pub_des_state/fast
-
-# Convenience name for target.
-learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_open_loop_controller.dir/rule:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_open_loop_controller.dir/rule
-.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_open_loop_controller.dir/rule
-
-# Convenience name for target.
-diag_open_loop_controller: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_open_loop_controller.dir/rule
-
-.PHONY : diag_open_loop_controller
-
-# fast build rule for target.
-diag_open_loop_controller/fast:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_open_loop_controller.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_open_loop_controller.dir/build
-.PHONY : diag_open_loop_controller/fast
-
-# Convenience name for target.
-learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_open_loop_controller_rot.dir/rule:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_open_loop_controller_rot.dir/rule
-.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_open_loop_controller_rot.dir/rule
-
-# Convenience name for target.
-diag_open_loop_controller_rot: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_open_loop_controller_rot.dir/rule
-
-.PHONY : diag_open_loop_controller_rot
-
-# fast build rule for target.
-diag_open_loop_controller_rot/fast:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_open_loop_controller_rot.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_open_loop_controller_rot.dir/build
-.PHONY : diag_open_loop_controller_rot/fast
-
-# Convenience name for target.
-learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_cpp.dir/rule:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_cpp.dir/rule
-.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-mobot_pub_des_state_generate_messages_cpp: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_cpp.dir/rule
-
-.PHONY : mobot_pub_des_state_generate_messages_cpp
-
-# fast build rule for target.
-mobot_pub_des_state_generate_messages_cpp/fast:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_cpp.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_cpp.dir/build
-.PHONY : mobot_pub_des_state_generate_messages_cpp/fast
-
-# Convenience name for target.
-learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_genpy.dir/rule:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_genpy.dir/rule
-.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_genpy.dir/rule
-
-# Convenience name for target.
-mobot_pub_des_state_genpy: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_genpy.dir/rule
-
-.PHONY : mobot_pub_des_state_genpy
-
-# fast build rule for target.
-mobot_pub_des_state_genpy/fast:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_genpy.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_genpy.dir/build
-.PHONY : mobot_pub_des_state_genpy/fast
+pub_des_state_path_client_3x3/fast:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/pub_des_state_path_client_3x3.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/pub_des_state_path_client_3x3.dir/build
+.PHONY : pub_des_state_path_client_3x3/fast
 
 # Convenience name for target.
 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/pub_des_state_path_client.dir/rule:
@@ -513,19 +198,214 @@ pub_des_state_path_client/fast:
 .PHONY : pub_des_state_path_client/fast
 
 # Convenience name for target.
-learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/pub_des_state_path_client_3x3.dir/rule:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/pub_des_state_path_client_3x3.dir/rule
-.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/pub_des_state_path_client_3x3.dir/rule
+learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_startup.dir/rule:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_startup.dir/rule
+.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_startup.dir/rule
 
 # Convenience name for target.
-pub_des_state_path_client_3x3: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/pub_des_state_path_client_3x3.dir/rule
+mobot_pub_des_state_startup: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_startup.dir/rule
 
-.PHONY : pub_des_state_path_client_3x3
+.PHONY : mobot_pub_des_state_startup
 
 # fast build rule for target.
-pub_des_state_path_client_3x3/fast:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/pub_des_state_path_client_3x3.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/pub_des_state_path_client_3x3.dir/build
-.PHONY : pub_des_state_path_client_3x3/fast
+mobot_pub_des_state_startup/fast:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_startup.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_startup.dir/build
+.PHONY : mobot_pub_des_state_startup/fast
+
+# Convenience name for target.
+learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state2.dir/rule:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state2.dir/rule
+.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state2.dir/rule
+
+# Convenience name for target.
+mobot_pub_des_state2: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state2.dir/rule
+
+.PHONY : mobot_pub_des_state2
+
+# fast build rule for target.
+mobot_pub_des_state2/fast:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state2.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state2.dir/build
+.PHONY : mobot_pub_des_state2/fast
+
+# Convenience name for target.
+learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/rule:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/rule
+.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/rule
+
+# Convenience name for target.
+mobot_pub_des_state: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/rule
+
+.PHONY : mobot_pub_des_state
+
+# fast build rule for target.
+mobot_pub_des_state/fast:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/build
+.PHONY : mobot_pub_des_state/fast
+
+# Convenience name for target.
+learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/open_loop_controller.dir/rule:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/open_loop_controller.dir/rule
+.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/open_loop_controller.dir/rule
+
+# Convenience name for target.
+open_loop_controller: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/open_loop_controller.dir/rule
+
+.PHONY : open_loop_controller
+
+# fast build rule for target.
+open_loop_controller/fast:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/open_loop_controller.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/open_loop_controller.dir/build
+.PHONY : open_loop_controller/fast
+
+# Convenience name for target.
+learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_package.dir/rule:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_package.dir/rule
+.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_package.dir/rule
+
+# Convenience name for target.
+mobot_pub_des_state_package: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_package.dir/rule
+
+.PHONY : mobot_pub_des_state_package
+
+# fast build rule for target.
+mobot_pub_des_state_package/fast:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_package.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_package.dir/build
+.PHONY : mobot_pub_des_state_package/fast
+
+# Convenience name for target.
+learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/starting_pen_pub_des_state_path_client.dir/rule:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/starting_pen_pub_des_state_path_client.dir/rule
+.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/starting_pen_pub_des_state_path_client.dir/rule
+
+# Convenience name for target.
+starting_pen_pub_des_state_path_client: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/starting_pen_pub_des_state_path_client.dir/rule
+
+.PHONY : starting_pen_pub_des_state_path_client
+
+# fast build rule for target.
+starting_pen_pub_des_state_path_client/fast:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/starting_pen_pub_des_state_path_client.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/starting_pen_pub_des_state_path_client.dir/build
+.PHONY : starting_pen_pub_des_state_path_client/fast
+
+# Convenience name for target.
+learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/_mobot_pub_des_state_generate_messages_check_deps_integer_query.dir/rule:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/_mobot_pub_des_state_generate_messages_check_deps_integer_query.dir/rule
+.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/_mobot_pub_des_state_generate_messages_check_deps_integer_query.dir/rule
+
+# Convenience name for target.
+_mobot_pub_des_state_generate_messages_check_deps_integer_query: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/_mobot_pub_des_state_generate_messages_check_deps_integer_query.dir/rule
+
+.PHONY : _mobot_pub_des_state_generate_messages_check_deps_integer_query
+
+# fast build rule for target.
+_mobot_pub_des_state_generate_messages_check_deps_integer_query/fast:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/_mobot_pub_des_state_generate_messages_check_deps_integer_query.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/_mobot_pub_des_state_generate_messages_check_deps_integer_query.dir/build
+.PHONY : _mobot_pub_des_state_generate_messages_check_deps_integer_query/fast
+
+# Convenience name for target.
+learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_geneus.dir/rule:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_geneus.dir/rule
+.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_geneus.dir/rule
+
+# Convenience name for target.
+mobot_pub_des_state_geneus: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_geneus.dir/rule
+
+.PHONY : mobot_pub_des_state_geneus
+
+# fast build rule for target.
+mobot_pub_des_state_geneus/fast:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_geneus.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_geneus.dir/build
+.PHONY : mobot_pub_des_state_geneus/fast
+
+# Convenience name for target.
+learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/_mobot_pub_des_state_generate_messages_check_deps_path.dir/rule:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/_mobot_pub_des_state_generate_messages_check_deps_path.dir/rule
+.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/_mobot_pub_des_state_generate_messages_check_deps_path.dir/rule
+
+# Convenience name for target.
+_mobot_pub_des_state_generate_messages_check_deps_path: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/_mobot_pub_des_state_generate_messages_check_deps_path.dir/rule
+
+.PHONY : _mobot_pub_des_state_generate_messages_check_deps_path
+
+# fast build rule for target.
+_mobot_pub_des_state_generate_messages_check_deps_path/fast:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/_mobot_pub_des_state_generate_messages_check_deps_path.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/_mobot_pub_des_state_generate_messages_check_deps_path.dir/build
+.PHONY : _mobot_pub_des_state_generate_messages_check_deps_path/fast
+
+# Convenience name for target.
+learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_genlisp.dir/rule:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_genlisp.dir/rule
+.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_genlisp.dir/rule
+
+# Convenience name for target.
+mobot_pub_des_state_genlisp: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_genlisp.dir/rule
+
+.PHONY : mobot_pub_des_state_genlisp
+
+# fast build rule for target.
+mobot_pub_des_state_genlisp/fast:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_genlisp.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_genlisp.dir/build
+.PHONY : mobot_pub_des_state_genlisp/fast
+
+# Convenience name for target.
+learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_gencpp.dir/rule:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_gencpp.dir/rule
+.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_gencpp.dir/rule
+
+# Convenience name for target.
+mobot_pub_des_state_gencpp: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_gencpp.dir/rule
+
+.PHONY : mobot_pub_des_state_gencpp
+
+# fast build rule for target.
+mobot_pub_des_state_gencpp/fast:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_gencpp.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_gencpp.dir/build
+.PHONY : mobot_pub_des_state_gencpp/fast
+
+# Convenience name for target.
+learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_lisp.dir/rule:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_lisp.dir/rule
+.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+mobot_pub_des_state_generate_messages_lisp: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_lisp.dir/rule
+
+.PHONY : mobot_pub_des_state_generate_messages_lisp
+
+# fast build rule for target.
+mobot_pub_des_state_generate_messages_lisp/fast:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_lisp.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_lisp.dir/build
+.PHONY : mobot_pub_des_state_generate_messages_lisp/fast
+
+# Convenience name for target.
+learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_genpy.dir/rule:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_genpy.dir/rule
+.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_genpy.dir/rule
+
+# Convenience name for target.
+mobot_pub_des_state_genpy: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_genpy.dir/rule
+
+.PHONY : mobot_pub_des_state_genpy
+
+# fast build rule for target.
+mobot_pub_des_state_genpy/fast:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_genpy.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_genpy.dir/build
+.PHONY : mobot_pub_des_state_genpy/fast
+
+# Convenience name for target.
+learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages.dir/rule:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages.dir/rule
+.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages.dir/rule
+
+# Convenience name for target.
+mobot_pub_des_state_generate_messages: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages.dir/rule
+
+.PHONY : mobot_pub_des_state_generate_messages
+
+# fast build rule for target.
+mobot_pub_des_state_generate_messages/fast:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages.dir/build
+.PHONY : mobot_pub_des_state_generate_messages/fast
 
 # Convenience name for target.
 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_nodejs.dir/rule:
@@ -542,86 +422,80 @@ mobot_pub_des_state_generate_messages_nodejs/fast:
 	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_nodejs.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_nodejs.dir/build
 .PHONY : mobot_pub_des_state_generate_messages_nodejs/fast
 
-src/diag_open_loop_controller.o: src/diag_open_loop_controller.cpp.o
+# Convenience name for target.
+learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/glennan_pub_des_state_path_client.dir/rule:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/glennan_pub_des_state_path_client.dir/rule
+.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/glennan_pub_des_state_path_client.dir/rule
 
-.PHONY : src/diag_open_loop_controller.o
+# Convenience name for target.
+glennan_pub_des_state_path_client: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/glennan_pub_des_state_path_client.dir/rule
 
-# target to build an object file
-src/diag_open_loop_controller.cpp.o:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_open_loop_controller.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_open_loop_controller.dir/src/diag_open_loop_controller.cpp.o
-.PHONY : src/diag_open_loop_controller.cpp.o
+.PHONY : glennan_pub_des_state_path_client
 
-src/diag_open_loop_controller.i: src/diag_open_loop_controller.cpp.i
+# fast build rule for target.
+glennan_pub_des_state_path_client/fast:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/glennan_pub_des_state_path_client.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/glennan_pub_des_state_path_client.dir/build
+.PHONY : glennan_pub_des_state_path_client/fast
 
-.PHONY : src/diag_open_loop_controller.i
+# Convenience name for target.
+learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_gennodejs.dir/rule:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_gennodejs.dir/rule
+.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_gennodejs.dir/rule
 
-# target to preprocess a source file
-src/diag_open_loop_controller.cpp.i:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_open_loop_controller.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_open_loop_controller.dir/src/diag_open_loop_controller.cpp.i
-.PHONY : src/diag_open_loop_controller.cpp.i
+# Convenience name for target.
+mobot_pub_des_state_gennodejs: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_gennodejs.dir/rule
 
-src/diag_open_loop_controller.s: src/diag_open_loop_controller.cpp.s
+.PHONY : mobot_pub_des_state_gennodejs
 
-.PHONY : src/diag_open_loop_controller.s
+# fast build rule for target.
+mobot_pub_des_state_gennodejs/fast:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_gennodejs.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_gennodejs.dir/build
+.PHONY : mobot_pub_des_state_gennodejs/fast
 
-# target to generate assembly for a file
-src/diag_open_loop_controller.cpp.s:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_open_loop_controller.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_open_loop_controller.dir/src/diag_open_loop_controller.cpp.s
-.PHONY : src/diag_open_loop_controller.cpp.s
+# Convenience name for target.
+learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_cpp.dir/rule:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_cpp.dir/rule
+.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_cpp.dir/rule
 
-src/diag_open_loop_controller_rot.o: src/diag_open_loop_controller_rot.cpp.o
+# Convenience name for target.
+mobot_pub_des_state_generate_messages_cpp: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_cpp.dir/rule
 
-.PHONY : src/diag_open_loop_controller_rot.o
+.PHONY : mobot_pub_des_state_generate_messages_cpp
 
-# target to build an object file
-src/diag_open_loop_controller_rot.cpp.o:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_open_loop_controller_rot.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_open_loop_controller_rot.dir/src/diag_open_loop_controller_rot.cpp.o
-.PHONY : src/diag_open_loop_controller_rot.cpp.o
+# fast build rule for target.
+mobot_pub_des_state_generate_messages_cpp/fast:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_cpp.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_cpp.dir/build
+.PHONY : mobot_pub_des_state_generate_messages_cpp/fast
 
-src/diag_open_loop_controller_rot.i: src/diag_open_loop_controller_rot.cpp.i
+# Convenience name for target.
+learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_eus.dir/rule:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_eus.dir/rule
+.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_eus.dir/rule
 
-.PHONY : src/diag_open_loop_controller_rot.i
+# Convenience name for target.
+mobot_pub_des_state_generate_messages_eus: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_eus.dir/rule
 
-# target to preprocess a source file
-src/diag_open_loop_controller_rot.cpp.i:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_open_loop_controller_rot.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_open_loop_controller_rot.dir/src/diag_open_loop_controller_rot.cpp.i
-.PHONY : src/diag_open_loop_controller_rot.cpp.i
+.PHONY : mobot_pub_des_state_generate_messages_eus
 
-src/diag_open_loop_controller_rot.s: src/diag_open_loop_controller_rot.cpp.s
+# fast build rule for target.
+mobot_pub_des_state_generate_messages_eus/fast:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_eus.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_eus.dir/build
+.PHONY : mobot_pub_des_state_generate_messages_eus/fast
 
-.PHONY : src/diag_open_loop_controller_rot.s
+# Convenience name for target.
+learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_py.dir/rule:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_py.dir/rule
+.PHONY : learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_py.dir/rule
 
-# target to generate assembly for a file
-src/diag_open_loop_controller_rot.cpp.s:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_open_loop_controller_rot.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_open_loop_controller_rot.dir/src/diag_open_loop_controller_rot.cpp.s
-.PHONY : src/diag_open_loop_controller_rot.cpp.s
+# Convenience name for target.
+mobot_pub_des_state_generate_messages_py: learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_py.dir/rule
 
-src/diag_pub_des_state_main.o: src/diag_pub_des_state_main.cpp.o
+.PHONY : mobot_pub_des_state_generate_messages_py
 
-.PHONY : src/diag_pub_des_state_main.o
-
-# target to build an object file
-src/diag_pub_des_state_main.cpp.o:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_mobot_pub_des_state.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_mobot_pub_des_state.dir/src/diag_pub_des_state_main.cpp.o
-.PHONY : src/diag_pub_des_state_main.cpp.o
-
-src/diag_pub_des_state_main.i: src/diag_pub_des_state_main.cpp.i
-
-.PHONY : src/diag_pub_des_state_main.i
-
-# target to preprocess a source file
-src/diag_pub_des_state_main.cpp.i:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_mobot_pub_des_state.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_mobot_pub_des_state.dir/src/diag_pub_des_state_main.cpp.i
-.PHONY : src/diag_pub_des_state_main.cpp.i
-
-src/diag_pub_des_state_main.s: src/diag_pub_des_state_main.cpp.s
-
-.PHONY : src/diag_pub_des_state_main.s
-
-# target to generate assembly for a file
-src/diag_pub_des_state_main.cpp.s:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_mobot_pub_des_state.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_mobot_pub_des_state.dir/src/diag_pub_des_state_main.cpp.s
-.PHONY : src/diag_pub_des_state_main.cpp.s
+# fast build rule for target.
+mobot_pub_des_state_generate_messages_py/fast:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_py.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_generate_messages_py.dir/build
+.PHONY : mobot_pub_des_state_generate_messages_py/fast
 
 src/glennan_pub_des_state_path_client.o: src/glennan_pub_des_state_path_client.cpp.o
 
@@ -683,9 +557,8 @@ src/pub_des_state.o: src/pub_des_state.cpp.o
 
 # target to build an object file
 src/pub_des_state.cpp.o:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/src/pub_des_state.cpp.o
 	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_startup.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_startup.dir/src/pub_des_state.cpp.o
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_mobot_pub_des_state.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_mobot_pub_des_state.dir/src/pub_des_state.cpp.o
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/src/pub_des_state.cpp.o
 .PHONY : src/pub_des_state.cpp.o
 
 src/pub_des_state.i: src/pub_des_state.cpp.i
@@ -694,9 +567,8 @@ src/pub_des_state.i: src/pub_des_state.cpp.i
 
 # target to preprocess a source file
 src/pub_des_state.cpp.i:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/src/pub_des_state.cpp.i
 	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_startup.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_startup.dir/src/pub_des_state.cpp.i
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_mobot_pub_des_state.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_mobot_pub_des_state.dir/src/pub_des_state.cpp.i
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/src/pub_des_state.cpp.i
 .PHONY : src/pub_des_state.cpp.i
 
 src/pub_des_state.s: src/pub_des_state.cpp.s
@@ -705,9 +577,8 @@ src/pub_des_state.s: src/pub_des_state.cpp.s
 
 # target to generate assembly for a file
 src/pub_des_state.cpp.s:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/src/pub_des_state.cpp.s
 	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_startup.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state_startup.dir/src/pub_des_state.cpp.s
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_mobot_pub_des_state.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/diag_mobot_pub_des_state.dir/src/pub_des_state.cpp.s
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/src/pub_des_state.cpp.s
 .PHONY : src/pub_des_state.cpp.s
 
 src/pub_des_state2.o: src/pub_des_state2.cpp.o
@@ -743,8 +614,8 @@ src/pub_des_state_main.o: src/pub_des_state_main.cpp.o
 
 # target to build an object file
 src/pub_des_state_main.cpp.o:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/src/pub_des_state_main.cpp.o
 	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state2.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state2.dir/src/pub_des_state_main.cpp.o
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/src/pub_des_state_main.cpp.o
 .PHONY : src/pub_des_state_main.cpp.o
 
 src/pub_des_state_main.i: src/pub_des_state_main.cpp.i
@@ -753,8 +624,8 @@ src/pub_des_state_main.i: src/pub_des_state_main.cpp.i
 
 # target to preprocess a source file
 src/pub_des_state_main.cpp.i:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/src/pub_des_state_main.cpp.i
 	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state2.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state2.dir/src/pub_des_state_main.cpp.i
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/src/pub_des_state_main.cpp.i
 .PHONY : src/pub_des_state_main.cpp.i
 
 src/pub_des_state_main.s: src/pub_des_state_main.cpp.s
@@ -763,8 +634,8 @@ src/pub_des_state_main.s: src/pub_des_state_main.cpp.s
 
 # target to generate assembly for a file
 src/pub_des_state_main.cpp.s:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/src/pub_des_state_main.cpp.s
 	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state2.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state2.dir/src/pub_des_state_main.cpp.s
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/build.make learning_ros_noetic/Part_4/mobot_pub_des_state/CMakeFiles/mobot_pub_des_state.dir/src/pub_des_state_main.cpp.s
 .PHONY : src/pub_des_state_main.cpp.s
 
 src/pub_des_state_path_client.o: src/pub_des_state_path_client.cpp.o
@@ -881,47 +752,35 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... install"
-	@echo "... mobot_pub_des_state_generate_messages_py"
-	@echo "... mobot_pub_des_state_generate_messages_eus"
-	@echo "... mobot_pub_des_state_gennodejs"
-	@echo "... glennan_pub_des_state_path_client"
-	@echo "... mobot_pub_des_state_generate_messages"
-	@echo "... mobot_pub_des_state_generate_messages_lisp"
-	@echo "... mobot_pub_des_state_gencpp"
-	@echo "... mobot_pub_des_state_genlisp"
-	@echo "... _mobot_pub_des_state_generate_messages_check_deps_path"
-	@echo "... test"
-	@echo "... _mobot_pub_des_state_generate_messages_check_deps_integer_query"
-	@echo "... starting_pen_pub_des_state_path_client"
-	@echo "... mobot_pub_des_state_package"
-	@echo "... mobot_pub_des_state_geneus"
-	@echo "... open_loop_controller"
-	@echo "... edit_cache"
-	@echo "... rebuild_cache"
-	@echo "... mobot_pub_des_state"
-	@echo "... mobot_pub_des_state2"
-	@echo "... mobot_pub_des_state_startup"
-	@echo "... diag_mobot_pub_des_state"
-	@echo "... diag_open_loop_controller"
-	@echo "... diag_open_loop_controller_rot"
-	@echo "... mobot_pub_des_state_generate_messages_cpp"
-	@echo "... mobot_pub_des_state_genpy"
-	@echo "... pub_des_state_path_client"
-	@echo "... pub_des_state_path_client_3x3"
-	@echo "... mobot_pub_des_state_generate_messages_nodejs"
 	@echo "... list_install_components"
-	@echo "... src/diag_open_loop_controller.o"
-	@echo "... src/diag_open_loop_controller.i"
-	@echo "... src/diag_open_loop_controller.s"
-	@echo "... src/diag_open_loop_controller_rot.o"
-	@echo "... src/diag_open_loop_controller_rot.i"
-	@echo "... src/diag_open_loop_controller_rot.s"
-	@echo "... src/diag_pub_des_state_main.o"
-	@echo "... src/diag_pub_des_state_main.i"
-	@echo "... src/diag_pub_des_state_main.s"
+	@echo "... pub_des_state_path_client_3x3"
+	@echo "... pub_des_state_path_client"
+	@echo "... mobot_pub_des_state_startup"
+	@echo "... install"
+	@echo "... mobot_pub_des_state2"
+	@echo "... mobot_pub_des_state"
+	@echo "... rebuild_cache"
+	@echo "... edit_cache"
+	@echo "... open_loop_controller"
+	@echo "... mobot_pub_des_state_package"
+	@echo "... starting_pen_pub_des_state_path_client"
+	@echo "... _mobot_pub_des_state_generate_messages_check_deps_integer_query"
+	@echo "... mobot_pub_des_state_geneus"
+	@echo "... test"
+	@echo "... _mobot_pub_des_state_generate_messages_check_deps_path"
+	@echo "... mobot_pub_des_state_genlisp"
+	@echo "... mobot_pub_des_state_gencpp"
+	@echo "... install/strip"
+	@echo "... mobot_pub_des_state_generate_messages_lisp"
+	@echo "... mobot_pub_des_state_genpy"
+	@echo "... mobot_pub_des_state_generate_messages"
+	@echo "... mobot_pub_des_state_generate_messages_nodejs"
+	@echo "... glennan_pub_des_state_path_client"
+	@echo "... mobot_pub_des_state_gennodejs"
+	@echo "... mobot_pub_des_state_generate_messages_cpp"
+	@echo "... mobot_pub_des_state_generate_messages_eus"
+	@echo "... mobot_pub_des_state_generate_messages_py"
 	@echo "... src/glennan_pub_des_state_path_client.o"
 	@echo "... src/glennan_pub_des_state_path_client.i"
 	@echo "... src/glennan_pub_des_state_path_client.s"

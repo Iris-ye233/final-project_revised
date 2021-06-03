@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/yedi/ros_ws/build
 include learning_ros_noetic/Part_3/object_finder/CMakeFiles/_object_finder_generate_messages_check_deps_objectFinderResult.dir/progress.make
 
 learning_ros_noetic/Part_3/object_finder/CMakeFiles/_object_finder_generate_messages_check_deps_objectFinderResult:
-	cd /home/yedi/ros_ws/build/learning_ros_noetic/Part_3/object_finder && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py object_finder /home/yedi/ros_ws/devel/share/object_finder/msg/objectFinderResult.msg geometry_msgs/Point:geometry_msgs/PoseStamped:std_msgs/Header:geometry_msgs/Quaternion:geometry_msgs/Pose
+	cd /home/yedi/ros_ws/build/learning_ros_noetic/Part_3/object_finder && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py object_finder /home/yedi/ros_ws/devel/share/object_finder/msg/objectFinderResult.msg std_msgs/Header:geometry_msgs/PoseStamped:geometry_msgs/Quaternion:geometry_msgs/Point:geometry_msgs/Pose
 
 _object_finder_generate_messages_check_deps_objectFinderResult: learning_ros_noetic/Part_3/object_finder/CMakeFiles/_object_finder_generate_messages_check_deps_objectFinderResult
 _object_finder_generate_messages_check_deps_objectFinderResult: learning_ros_noetic/Part_3/object_finder/CMakeFiles/_object_finder_generate_messages_check_deps_objectFinderResult.dir/build.make

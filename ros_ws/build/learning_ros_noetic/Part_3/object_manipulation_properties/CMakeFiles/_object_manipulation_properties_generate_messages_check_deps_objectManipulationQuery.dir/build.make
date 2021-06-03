@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/yedi/ros_ws/build
 include learning_ros_noetic/Part_3/object_manipulation_properties/CMakeFiles/_object_manipulation_properties_generate_messages_check_deps_objectManipulationQuery.dir/progress.make
 
 learning_ros_noetic/Part_3/object_manipulation_properties/CMakeFiles/_object_manipulation_properties_generate_messages_check_deps_objectManipulationQuery:
-	cd /home/yedi/ros_ws/build/learning_ros_noetic/Part_3/object_manipulation_properties && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py object_manipulation_properties /home/yedi/ros_ws/src/learning_ros_noetic/Part_3/object_manipulation_properties/srv/objectManipulationQuery.srv geometry_msgs/Point:geometry_msgs/Quaternion:geometry_msgs/Pose
+	cd /home/yedi/ros_ws/build/learning_ros_noetic/Part_3/object_manipulation_properties && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py object_manipulation_properties /home/yedi/ros_ws/src/learning_ros_noetic/Part_3/object_manipulation_properties/srv/objectManipulationQuery.srv geometry_msgs/Pose:geometry_msgs/Quaternion:geometry_msgs/Point
 
 _object_manipulation_properties_generate_messages_check_deps_objectManipulationQuery: learning_ros_noetic/Part_3/object_manipulation_properties/CMakeFiles/_object_manipulation_properties_generate_messages_check_deps_objectManipulationQuery
 _object_manipulation_properties_generate_messages_check_deps_objectManipulationQuery: learning_ros_noetic/Part_3/object_manipulation_properties/CMakeFiles/_object_manipulation_properties_generate_messages_check_deps_objectManipulationQuery.dir/build.make

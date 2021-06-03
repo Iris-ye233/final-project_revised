@@ -168,21 +168,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-learning_ros_noetic/Part_5/object_grabber/CMakeFiles/block_grabber_action_client2.dir/rule:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_5/object_grabber/CMakeFiles/block_grabber_action_client2.dir/rule
-.PHONY : learning_ros_noetic/Part_5/object_grabber/CMakeFiles/block_grabber_action_client2.dir/rule
-
-# Convenience name for target.
-block_grabber_action_client2: learning_ros_noetic/Part_5/object_grabber/CMakeFiles/block_grabber_action_client2.dir/rule
-
-.PHONY : block_grabber_action_client2
-
-# fast build rule for target.
-block_grabber_action_client2/fast:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_5/object_grabber/CMakeFiles/block_grabber_action_client2.dir/build.make learning_ros_noetic/Part_5/object_grabber/CMakeFiles/block_grabber_action_client2.dir/build
-.PHONY : block_grabber_action_client2/fast
-
-# Convenience name for target.
 learning_ros_noetic/Part_5/object_grabber/CMakeFiles/block_grabber_action_client.dir/rule:
 	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_5/object_grabber/CMakeFiles/block_grabber_action_client.dir/rule
 .PHONY : learning_ros_noetic/Part_5/object_grabber/CMakeFiles/block_grabber_action_client.dir/rule
@@ -824,33 +809,6 @@ src/block_grabber_action_client.cpp.s:
 	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_5/object_grabber/CMakeFiles/block_grabber_action_client.dir/build.make learning_ros_noetic/Part_5/object_grabber/CMakeFiles/block_grabber_action_client.dir/src/block_grabber_action_client.cpp.s
 .PHONY : src/block_grabber_action_client.cpp.s
 
-src/block_grabber_action_client2.o: src/block_grabber_action_client2.cpp.o
-
-.PHONY : src/block_grabber_action_client2.o
-
-# target to build an object file
-src/block_grabber_action_client2.cpp.o:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_5/object_grabber/CMakeFiles/block_grabber_action_client2.dir/build.make learning_ros_noetic/Part_5/object_grabber/CMakeFiles/block_grabber_action_client2.dir/src/block_grabber_action_client2.cpp.o
-.PHONY : src/block_grabber_action_client2.cpp.o
-
-src/block_grabber_action_client2.i: src/block_grabber_action_client2.cpp.i
-
-.PHONY : src/block_grabber_action_client2.i
-
-# target to preprocess a source file
-src/block_grabber_action_client2.cpp.i:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_5/object_grabber/CMakeFiles/block_grabber_action_client2.dir/build.make learning_ros_noetic/Part_5/object_grabber/CMakeFiles/block_grabber_action_client2.dir/src/block_grabber_action_client2.cpp.i
-.PHONY : src/block_grabber_action_client2.cpp.i
-
-src/block_grabber_action_client2.s: src/block_grabber_action_client2.cpp.s
-
-.PHONY : src/block_grabber_action_client2.s
-
-# target to generate assembly for a file
-src/block_grabber_action_client2.cpp.s:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_5/object_grabber/CMakeFiles/block_grabber_action_client2.dir/build.make learning_ros_noetic/Part_5/object_grabber/CMakeFiles/block_grabber_action_client2.dir/src/block_grabber_action_client2.cpp.s
-.PHONY : src/block_grabber_action_client2.cpp.s
-
 src/example_object_grabber_action_client.o: src/example_object_grabber_action_client.cpp.o
 
 .PHONY : src/example_object_grabber_action_client.o
@@ -1051,7 +1009,6 @@ help:
 	@echo "... list_install_components"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... block_grabber_action_client2"
 	@echo "... block_grabber_action_client"
 	@echo "... example_object_grabber_action_client"
 	@echo "... object_grabber_genpy"
@@ -1098,9 +1055,6 @@ help:
 	@echo "... src/block_grabber_action_client.o"
 	@echo "... src/block_grabber_action_client.i"
 	@echo "... src/block_grabber_action_client.s"
-	@echo "... src/block_grabber_action_client2.o"
-	@echo "... src/block_grabber_action_client2.i"
-	@echo "... src/block_grabber_action_client2.s"
 	@echo "... src/example_object_grabber_action_client.o"
 	@echo "... src/example_object_grabber_action_client.i"
 	@echo "... src/example_object_grabber_action_client.s"

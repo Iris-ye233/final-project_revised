@@ -64,73 +64,73 @@ learning_ros_noetic/Part_5/arm_motion_action/CMakeFiles/arm_motion_action_genera
 
 /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceAction.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceAction.js: /home/yedi/ros_ws/devel/share/arm_motion_action/msg/arm_interfaceAction.msg
-/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceAction.js: /home/yedi/ros_ws/devel/share/arm_motion_action/msg/arm_interfaceActionGoal.msg
-/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceAction.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceAction.js: /home/yedi/ros_ws/devel/share/arm_motion_action/msg/arm_interfaceResult.msg
 /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceAction.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceAction.js: /home/yedi/ros_ws/devel/share/arm_motion_action/msg/arm_interfaceGoal.msg
-/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceAction.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceAction.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceAction.js: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
-/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceAction.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceAction.js: /home/yedi/ros_ws/devel/share/arm_motion_action/msg/arm_interfaceActionResult.msg
-/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceAction.js: /home/yedi/ros_ws/devel/share/arm_motion_action/msg/arm_interfaceFeedback.msg
-/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceAction.js: /home/yedi/ros_ws/devel/share/arm_motion_action/msg/arm_interfaceActionFeedback.msg
 /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceAction.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceAction.js: /home/yedi/ros_ws/devel/share/arm_motion_action/msg/arm_interfaceGoal.msg
+/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceAction.js: /home/yedi/ros_ws/devel/share/arm_motion_action/msg/arm_interfaceActionResult.msg
+/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceAction.js: /home/yedi/ros_ws/devel/share/arm_motion_action/msg/arm_interfaceActionFeedback.msg
+/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceAction.js: /home/yedi/ros_ws/devel/share/arm_motion_action/msg/arm_interfaceResult.msg
+/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceAction.js: /home/yedi/ros_ws/devel/share/arm_motion_action/msg/arm_interfaceActionGoal.msg
+/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceAction.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceAction.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceAction.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceAction.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceAction.js: /home/yedi/ros_ws/devel/share/arm_motion_action/msg/arm_interfaceFeedback.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yedi/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from arm_motion_action/arm_interfaceAction.msg"
 	cd /home/yedi/ros_ws/build/learning_ros_noetic/Part_5/arm_motion_action && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/yedi/ros_ws/devel/share/arm_motion_action/msg/arm_interfaceAction.msg -Iarm_motion_action:/home/yedi/ros_ws/devel/share/arm_motion_action/msg -Iroscpp:/opt/ros/noetic/share/roscpp/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Iactionlib:/opt/ros/noetic/share/actionlib/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p arm_motion_action -o /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg
 
 /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionGoal.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionGoal.js: /home/yedi/ros_ws/devel/share/arm_motion_action/msg/arm_interfaceActionGoal.msg
-/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionGoal.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionGoal.js: /home/yedi/ros_ws/devel/share/arm_motion_action/msg/arm_interfaceGoal.msg
 /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionGoal.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionGoal.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionGoal.js: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
-/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionGoal.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionGoal.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionGoal.js: /home/yedi/ros_ws/devel/share/arm_motion_action/msg/arm_interfaceGoal.msg
+/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionGoal.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionGoal.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionGoal.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yedi/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from arm_motion_action/arm_interfaceActionGoal.msg"
 	cd /home/yedi/ros_ws/build/learning_ros_noetic/Part_5/arm_motion_action && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/yedi/ros_ws/devel/share/arm_motion_action/msg/arm_interfaceActionGoal.msg -Iarm_motion_action:/home/yedi/ros_ws/devel/share/arm_motion_action/msg -Iroscpp:/opt/ros/noetic/share/roscpp/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Iactionlib:/opt/ros/noetic/share/actionlib/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p arm_motion_action -o /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg
 
 /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionResult.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionResult.js: /home/yedi/ros_ws/devel/share/arm_motion_action/msg/arm_interfaceActionResult.msg
-/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionResult.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionResult.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
 /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionResult.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionResult.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionResult.js: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
-/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionResult.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionResult.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionResult.js: /home/yedi/ros_ws/devel/share/arm_motion_action/msg/arm_interfaceResult.msg
+/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionResult.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionResult.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionResult.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionResult.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yedi/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from arm_motion_action/arm_interfaceActionResult.msg"
 	cd /home/yedi/ros_ws/build/learning_ros_noetic/Part_5/arm_motion_action && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/yedi/ros_ws/devel/share/arm_motion_action/msg/arm_interfaceActionResult.msg -Iarm_motion_action:/home/yedi/ros_ws/devel/share/arm_motion_action/msg -Iroscpp:/opt/ros/noetic/share/roscpp/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Iactionlib:/opt/ros/noetic/share/actionlib/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p arm_motion_action -o /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg
 
 /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionFeedback.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionFeedback.js: /home/yedi/ros_ws/devel/share/arm_motion_action/msg/arm_interfaceActionFeedback.msg
+/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionFeedback.js: /home/yedi/ros_ws/devel/share/arm_motion_action/msg/arm_interfaceFeedback.msg
+/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionFeedback.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionFeedback.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
 /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionFeedback.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionFeedback.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceActionFeedback.js: /home/yedi/ros_ws/devel/share/arm_motion_action/msg/arm_interfaceFeedback.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yedi/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Javascript code from arm_motion_action/arm_interfaceActionFeedback.msg"
 	cd /home/yedi/ros_ws/build/learning_ros_noetic/Part_5/arm_motion_action && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/yedi/ros_ws/devel/share/arm_motion_action/msg/arm_interfaceActionFeedback.msg -Iarm_motion_action:/home/yedi/ros_ws/devel/share/arm_motion_action/msg -Iroscpp:/opt/ros/noetic/share/roscpp/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Iactionlib:/opt/ros/noetic/share/actionlib/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p arm_motion_action -o /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg
 
 /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceGoal.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceGoal.js: /home/yedi/ros_ws/devel/share/arm_motion_action/msg/arm_interfaceGoal.msg
 /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceGoal.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceGoal.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceGoal.js: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
-/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceGoal.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceGoal.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceGoal.js: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
+/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceGoal.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceGoal.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yedi/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Javascript code from arm_motion_action/arm_interfaceGoal.msg"
 	cd /home/yedi/ros_ws/build/learning_ros_noetic/Part_5/arm_motion_action && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/yedi/ros_ws/devel/share/arm_motion_action/msg/arm_interfaceGoal.msg -Iarm_motion_action:/home/yedi/ros_ws/devel/share/arm_motion_action/msg -Iroscpp:/opt/ros/noetic/share/roscpp/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Iactionlib:/opt/ros/noetic/share/actionlib/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p arm_motion_action -o /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg
 
 /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceResult.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceResult.js: /home/yedi/ros_ws/devel/share/arm_motion_action/msg/arm_interfaceResult.msg
 /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceResult.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceResult.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceResult.js: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
-/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceResult.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceResult.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceResult.js: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
+/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceResult.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg/arm_interfaceResult.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yedi/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Javascript code from arm_motion_action/arm_interfaceResult.msg"
 	cd /home/yedi/ros_ws/build/learning_ros_noetic/Part_5/arm_motion_action && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/yedi/ros_ws/devel/share/arm_motion_action/msg/arm_interfaceResult.msg -Iarm_motion_action:/home/yedi/ros_ws/devel/share/arm_motion_action/msg -Iroscpp:/opt/ros/noetic/share/roscpp/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Iactionlib:/opt/ros/noetic/share/actionlib/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p arm_motion_action -o /home/yedi/ros_ws/devel/share/gennodejs/ros/arm_motion_action/msg
 

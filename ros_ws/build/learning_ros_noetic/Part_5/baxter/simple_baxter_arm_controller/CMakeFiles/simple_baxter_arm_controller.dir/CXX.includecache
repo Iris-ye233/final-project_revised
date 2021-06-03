@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+/home/yedi/ros_ws/devel/include/baxter_core_msgs/JointCommand.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
 /home/yedi/ros_ws/src/learning_ros_noetic/Part_5/baxter/simple_baxter_arm_controller/src/simple_baxter_arm_controller.cpp
 ros/ros.h
 -
@@ -220,6 +236,10 @@ boost/make_shared.hpp
 cstddef
 -
 memory
+-
+
+/opt/ros/noetic/include/ros/message_operations.h
+ostream
 -
 
 /opt/ros/noetic/include/ros/message_traits.h

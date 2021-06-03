@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/yedi/ros_ws/build
 include learning_ros_noetic/Part_5/arm7dof/arm7dof_traj_as/CMakeFiles/_arm7dof_traj_as_generate_messages_check_deps_trajGoal.dir/progress.make
 
 learning_ros_noetic/Part_5/arm7dof/arm7dof_traj_as/CMakeFiles/_arm7dof_traj_as_generate_messages_check_deps_trajGoal:
-	cd /home/yedi/ros_ws/build/learning_ros_noetic/Part_5/arm7dof/arm7dof_traj_as && ../../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py arm7dof_traj_as /home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg std_msgs/Header:trajectory_msgs/JointTrajectoryPoint:trajectory_msgs/JointTrajectory
+	cd /home/yedi/ros_ws/build/learning_ros_noetic/Part_5/arm7dof/arm7dof_traj_as && ../../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py arm7dof_traj_as /home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg trajectory_msgs/JointTrajectory:trajectory_msgs/JointTrajectoryPoint:std_msgs/Header
 
 _arm7dof_traj_as_generate_messages_check_deps_trajGoal: learning_ros_noetic/Part_5/arm7dof/arm7dof_traj_as/CMakeFiles/_arm7dof_traj_as_generate_messages_check_deps_trajGoal
 _arm7dof_traj_as_generate_messages_check_deps_trajGoal: learning_ros_noetic/Part_5/arm7dof/arm7dof_traj_as/CMakeFiles/_arm7dof_traj_as_generate_messages_check_deps_trajGoal.dir/build.make

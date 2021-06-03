@@ -56,3 +56,9 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ariac_models" TYPE FILE FILES "/home/yedi/ros_ws/src/learning_ros_noetic/Part_5/cwru_ariac/ariac_models/package.xml")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  include("/home/yedi/ros_ws/build/learning_ros_noetic/Part_5/cwru_ariac/ariac_models/catkin_simple/cmake_install.cmake")
+
+endif()
+

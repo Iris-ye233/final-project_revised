@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/yedi/ros_ws/build
 include learning_ros_noetic/Part_3/magic_object_finder/CMakeFiles/_magic_object_finder_generate_messages_check_deps_magicObjectFinderResult.dir/progress.make
 
 learning_ros_noetic/Part_3/magic_object_finder/CMakeFiles/_magic_object_finder_generate_messages_check_deps_magicObjectFinderResult:
-	cd /home/yedi/ros_ws/build/learning_ros_noetic/Part_3/magic_object_finder && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py magic_object_finder /home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderResult.msg geometry_msgs/PoseStamped:geometry_msgs/Quaternion:geometry_msgs/Pose:geometry_msgs/Point:std_msgs/Header
+	cd /home/yedi/ros_ws/build/learning_ros_noetic/Part_3/magic_object_finder && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py magic_object_finder /home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderResult.msg std_msgs/Header:geometry_msgs/Quaternion:geometry_msgs/PoseStamped:geometry_msgs/Point:geometry_msgs/Pose
 
 _magic_object_finder_generate_messages_check_deps_magicObjectFinderResult: learning_ros_noetic/Part_3/magic_object_finder/CMakeFiles/_magic_object_finder_generate_messages_check_deps_magicObjectFinderResult
 _magic_object_finder_generate_messages_check_deps_magicObjectFinderResult: learning_ros_noetic/Part_3/magic_object_finder/CMakeFiles/_magic_object_finder_generate_messages_check_deps_magicObjectFinderResult.dir/build.make

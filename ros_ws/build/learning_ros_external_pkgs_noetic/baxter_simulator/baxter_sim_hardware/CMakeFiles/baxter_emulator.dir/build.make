@@ -131,7 +131,7 @@ baxter_emulator_EXTERNAL_OBJECTS =
 /home/yedi/ros_ws/devel/lib/baxter_sim_hardware/baxter_emulator: /opt/ros/noetic/lib/libimage_transport.so
 /home/yedi/ros_ws/devel/lib/baxter_sim_hardware/baxter_emulator: /home/yedi/ros_ws/devel/lib/libbaxter_sim_kinematics.so
 /home/yedi/ros_ws/devel/lib/baxter_sim_hardware/baxter_emulator: /opt/ros/noetic/lib/libkdl_parser.so
-/home/yedi/ros_ws/devel/lib/baxter_sim_hardware/baxter_emulator: /usr/lib/liborocos-kdl.so
+/home/yedi/ros_ws/devel/lib/baxter_sim_hardware/baxter_emulator: /usr/local/lib/liborocos-kdl.so
 /home/yedi/ros_ws/devel/lib/baxter_sim_hardware/baxter_emulator: /opt/ros/noetic/lib/liburdf.so
 /home/yedi/ros_ws/devel/lib/baxter_sim_hardware/baxter_emulator: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
 /home/yedi/ros_ws/devel/lib/baxter_sim_hardware/baxter_emulator: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so
@@ -201,7 +201,7 @@ baxter_emulator_EXTERNAL_OBJECTS =
 /home/yedi/ros_ws/devel/lib/baxter_sim_hardware/baxter_emulator: /opt/ros/noetic/lib/libtf_conversions.so
 /home/yedi/ros_ws/devel/lib/baxter_sim_hardware/baxter_emulator: /opt/ros/noetic/lib/libkdl_conversions.so
 /home/yedi/ros_ws/devel/lib/baxter_sim_hardware/baxter_emulator: /opt/ros/noetic/lib/libkdl_parser.so
-/home/yedi/ros_ws/devel/lib/baxter_sim_hardware/baxter_emulator: /usr/lib/liborocos-kdl.so
+/home/yedi/ros_ws/devel/lib/baxter_sim_hardware/baxter_emulator: /usr/local/lib/liborocos-kdl.so
 /home/yedi/ros_ws/devel/lib/baxter_sim_hardware/baxter_emulator: /opt/ros/noetic/lib/liburdf.so
 /home/yedi/ros_ws/devel/lib/baxter_sim_hardware/baxter_emulator: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
 /home/yedi/ros_ws/devel/lib/baxter_sim_hardware/baxter_emulator: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so

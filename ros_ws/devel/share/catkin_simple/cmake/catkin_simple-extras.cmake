@@ -8,7 +8,7 @@ set(_CATKIN_SIMPLE_EXTRAS_INCLUDED_ TRUE)
 include(CMakeParseArguments)
 
 # cmake dir in develspace
-set(catkin_simple_CMAKE_DIR "/home/yedi/ros_ws/src/learning_ros_external_pkgs_noetic/catkin_simple/cmake")
+set(catkin_simple_CMAKE_DIR "/home/yedi/ros_ws/src/learning_ros_noetic/Part_5/cwru_ariac/ariac_models/catkin_simple/cmake")
 
 macro(catkin_simple)
   # Arguments

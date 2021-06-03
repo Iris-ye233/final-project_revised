@@ -19,27 +19,27 @@ add_custom_target(arm7dof_traj_as_generate_messages ALL)
 
 get_filename_component(_filename "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajAction.msg" NAME_WE)
 add_custom_target(_arm7dof_traj_as_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "arm7dof_traj_as" "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajAction.msg" "arm7dof_traj_as/trajGoal:std_msgs/Header:actionlib_msgs/GoalStatus:trajectory_msgs/JointTrajectoryPoint:arm7dof_traj_as/trajResult:arm7dof_traj_as/trajActionFeedback:arm7dof_traj_as/trajActionResult:arm7dof_traj_as/trajFeedback:arm7dof_traj_as/trajActionGoal:actionlib_msgs/GoalID:trajectory_msgs/JointTrajectory"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "arm7dof_traj_as" "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajAction.msg" "arm7dof_traj_as/trajActionFeedback:arm7dof_traj_as/trajResult:trajectory_msgs/JointTrajectoryPoint:std_msgs/Header:trajectory_msgs/JointTrajectory:actionlib_msgs/GoalID:arm7dof_traj_as/trajActionResult:actionlib_msgs/GoalStatus:arm7dof_traj_as/trajFeedback:arm7dof_traj_as/trajActionGoal:arm7dof_traj_as/trajGoal"
 )
 
 get_filename_component(_filename "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionGoal.msg" NAME_WE)
 add_custom_target(_arm7dof_traj_as_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "arm7dof_traj_as" "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionGoal.msg" "arm7dof_traj_as/trajGoal:std_msgs/Header:trajectory_msgs/JointTrajectoryPoint:actionlib_msgs/GoalID:trajectory_msgs/JointTrajectory"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "arm7dof_traj_as" "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionGoal.msg" "trajectory_msgs/JointTrajectoryPoint:std_msgs/Header:trajectory_msgs/JointTrajectory:actionlib_msgs/GoalID:arm7dof_traj_as/trajGoal"
 )
 
 get_filename_component(_filename "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionResult.msg" NAME_WE)
 add_custom_target(_arm7dof_traj_as_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "arm7dof_traj_as" "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionResult.msg" "actionlib_msgs/GoalStatus:std_msgs/Header:arm7dof_traj_as/trajResult:actionlib_msgs/GoalID"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "arm7dof_traj_as" "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionResult.msg" "actionlib_msgs/GoalID:arm7dof_traj_as/trajResult:actionlib_msgs/GoalStatus:std_msgs/Header"
 )
 
 get_filename_component(_filename "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionFeedback.msg" NAME_WE)
 add_custom_target(_arm7dof_traj_as_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "arm7dof_traj_as" "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionFeedback.msg" "actionlib_msgs/GoalStatus:std_msgs/Header:arm7dof_traj_as/trajFeedback:actionlib_msgs/GoalID"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "arm7dof_traj_as" "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionFeedback.msg" "actionlib_msgs/GoalID:arm7dof_traj_as/trajFeedback:actionlib_msgs/GoalStatus:std_msgs/Header"
 )
 
 get_filename_component(_filename "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg" NAME_WE)
 add_custom_target(_arm7dof_traj_as_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "arm7dof_traj_as" "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg" "std_msgs/Header:trajectory_msgs/JointTrajectoryPoint:trajectory_msgs/JointTrajectory"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "arm7dof_traj_as" "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg" "trajectory_msgs/JointTrajectory:trajectory_msgs/JointTrajectoryPoint:std_msgs/Header"
 )
 
 get_filename_component(_filename "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajResult.msg" NAME_WE)
@@ -61,31 +61,31 @@ add_custom_target(_arm7dof_traj_as_generate_messages_check_deps_${_filename}
 _generate_msg_cpp(arm7dof_traj_as
   "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajResult.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionFeedback.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionResult.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajFeedback.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg"
+  "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionFeedback.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajResult.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajFeedback.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionGoal.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/arm7dof_traj_as
 )
 _generate_msg_cpp(arm7dof_traj_as
   "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg"
+  "/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/arm7dof_traj_as
 )
 _generate_msg_cpp(arm7dof_traj_as
   "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/arm7dof_traj_as
 )
 _generate_msg_cpp(arm7dof_traj_as
   "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/arm7dof_traj_as
 )
 _generate_msg_cpp(arm7dof_traj_as
   "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg"
+  "/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/arm7dof_traj_as
 )
 _generate_msg_cpp(arm7dof_traj_as
@@ -142,31 +142,31 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS arm7dof_traj_as_generate_messages_c
 _generate_msg_eus(arm7dof_traj_as
   "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajResult.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionFeedback.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionResult.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajFeedback.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg"
+  "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionFeedback.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajResult.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajFeedback.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionGoal.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/arm7dof_traj_as
 )
 _generate_msg_eus(arm7dof_traj_as
   "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg"
+  "/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/arm7dof_traj_as
 )
 _generate_msg_eus(arm7dof_traj_as
   "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/arm7dof_traj_as
 )
 _generate_msg_eus(arm7dof_traj_as
   "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/arm7dof_traj_as
 )
 _generate_msg_eus(arm7dof_traj_as
   "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg"
+  "/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/arm7dof_traj_as
 )
 _generate_msg_eus(arm7dof_traj_as
@@ -223,31 +223,31 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS arm7dof_traj_as_generate_messages_e
 _generate_msg_lisp(arm7dof_traj_as
   "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajResult.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionFeedback.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionResult.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajFeedback.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg"
+  "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionFeedback.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajResult.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajFeedback.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionGoal.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/arm7dof_traj_as
 )
 _generate_msg_lisp(arm7dof_traj_as
   "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg"
+  "/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/arm7dof_traj_as
 )
 _generate_msg_lisp(arm7dof_traj_as
   "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/arm7dof_traj_as
 )
 _generate_msg_lisp(arm7dof_traj_as
   "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/arm7dof_traj_as
 )
 _generate_msg_lisp(arm7dof_traj_as
   "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg"
+  "/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/arm7dof_traj_as
 )
 _generate_msg_lisp(arm7dof_traj_as
@@ -304,31 +304,31 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS arm7dof_traj_as_generate_messages_l
 _generate_msg_nodejs(arm7dof_traj_as
   "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajResult.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionFeedback.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionResult.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajFeedback.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg"
+  "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionFeedback.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajResult.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajFeedback.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionGoal.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/arm7dof_traj_as
 )
 _generate_msg_nodejs(arm7dof_traj_as
   "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg"
+  "/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/arm7dof_traj_as
 )
 _generate_msg_nodejs(arm7dof_traj_as
   "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/arm7dof_traj_as
 )
 _generate_msg_nodejs(arm7dof_traj_as
   "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/arm7dof_traj_as
 )
 _generate_msg_nodejs(arm7dof_traj_as
   "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg"
+  "/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/arm7dof_traj_as
 )
 _generate_msg_nodejs(arm7dof_traj_as
@@ -385,31 +385,31 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS arm7dof_traj_as_generate_messages_n
 _generate_msg_py(arm7dof_traj_as
   "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajResult.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionFeedback.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionResult.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajFeedback.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg"
+  "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionFeedback.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajResult.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajFeedback.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionGoal.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/arm7dof_traj_as
 )
 _generate_msg_py(arm7dof_traj_as
   "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg"
+  "/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/arm7dof_traj_as
 )
 _generate_msg_py(arm7dof_traj_as
   "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/arm7dof_traj_as
 )
 _generate_msg_py(arm7dof_traj_as
   "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/arm7dof_traj_as
 )
 _generate_msg_py(arm7dof_traj_as
   "/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg"
+  "/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/arm7dof_traj_as
 )
 _generate_msg_py(arm7dof_traj_as

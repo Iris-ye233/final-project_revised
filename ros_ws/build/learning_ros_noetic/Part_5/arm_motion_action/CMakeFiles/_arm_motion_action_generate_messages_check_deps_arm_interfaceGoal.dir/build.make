@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/yedi/ros_ws/build
 include learning_ros_noetic/Part_5/arm_motion_action/CMakeFiles/_arm_motion_action_generate_messages_check_deps_arm_interfaceGoal.dir/progress.make
 
 learning_ros_noetic/Part_5/arm_motion_action/CMakeFiles/_arm_motion_action_generate_messages_check_deps_arm_interfaceGoal:
-	cd /home/yedi/ros_ws/build/learning_ros_noetic/Part_5/arm_motion_action && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py arm_motion_action /home/yedi/ros_ws/devel/share/arm_motion_action/msg/arm_interfaceGoal.msg std_msgs/Header:geometry_msgs/Pose:geometry_msgs/PoseStamped:geometry_msgs/Quaternion:geometry_msgs/Point
+	cd /home/yedi/ros_ws/build/learning_ros_noetic/Part_5/arm_motion_action && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py arm_motion_action /home/yedi/ros_ws/devel/share/arm_motion_action/msg/arm_interfaceGoal.msg std_msgs/Header:geometry_msgs/Point:geometry_msgs/PoseStamped:geometry_msgs/Pose:geometry_msgs/Quaternion
 
 _arm_motion_action_generate_messages_check_deps_arm_interfaceGoal: learning_ros_noetic/Part_5/arm_motion_action/CMakeFiles/_arm_motion_action_generate_messages_check_deps_arm_interfaceGoal
 _arm_motion_action_generate_messages_check_deps_arm_interfaceGoal: learning_ros_noetic/Part_5/arm_motion_action/CMakeFiles/_arm_motion_action_generate_messages_check_deps_arm_interfaceGoal.dir/build.make

@@ -1,21 +1,21 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/yedi/ros_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_704d6/fast && /usr/bin/make -f CMakeFiles/cmTC_704d6.dir/build.make CMakeFiles/cmTC_704d6.dir/build
+Run Build Command(s):/usr/bin/make cmTC_24694/fast && /usr/bin/make -f CMakeFiles/cmTC_24694.dir/build.make CMakeFiles/cmTC_24694.dir/build
 make[1]: 进入目录“/home/yedi/ros_ws/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_704d6.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_704d6.dir/src.c.o   -c /home/yedi/ros_ws/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_704d6
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_704d6.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_704d6.dir/src.c.o  -o cmTC_704d6 
-/usr/bin/ld: CMakeFiles/cmTC_704d6.dir/src.c.o: in function `main':
+Building C object CMakeFiles/cmTC_24694.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_24694.dir/src.c.o   -c /home/yedi/ros_ws/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_24694
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_24694.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_24694.dir/src.c.o  -o cmTC_24694 
+/usr/bin/ld: CMakeFiles/cmTC_24694.dir/src.c.o: in function `main':
 src.c:(.text+0x46): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_704d6.dir/build.make:87：cmTC_704d6] 错误 1
+make[1]: *** [CMakeFiles/cmTC_24694.dir/build.make:87：cmTC_24694] 错误 1
 make[1]: 离开目录“/home/yedi/ros_ws/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_704d6/fast] 错误 2
+make: *** [Makefile:121：cmTC_24694/fast] 错误 2
 
 
 Source file was:
@@ -41,18 +41,18 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/yedi/ros_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_a0a21/fast && /usr/bin/make -f CMakeFiles/cmTC_a0a21.dir/build.make CMakeFiles/cmTC_a0a21.dir/build
+Run Build Command(s):/usr/bin/make cmTC_c7ae3/fast && /usr/bin/make -f CMakeFiles/cmTC_c7ae3.dir/build.make CMakeFiles/cmTC_c7ae3.dir/build
 make[1]: 进入目录“/home/yedi/ros_ws/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_a0a21.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_a0a21.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_a0a21
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0a21.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_a0a21.dir/CheckFunctionExists.c.o  -o cmTC_a0a21  -lpthreads 
+Building C object CMakeFiles/cmTC_c7ae3.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_c7ae3.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c7ae3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c7ae3.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_c7ae3.dir/CheckFunctionExists.c.o  -o cmTC_c7ae3  -lpthreads 
 /usr/bin/ld: 找不到 -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_a0a21.dir/build.make:87：cmTC_a0a21] 错误 1
+make[1]: *** [CMakeFiles/cmTC_c7ae3.dir/build.make:87：cmTC_c7ae3] 错误 1
 make[1]: 离开目录“/home/yedi/ros_ws/build/CMakeFiles/CMakeTmp”
-make: *** [Makefile:121：cmTC_a0a21/fast] 错误 2
+make: *** [Makefile:121：cmTC_c7ae3/fast] 错误 2
 
 
 

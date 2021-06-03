@@ -32,7 +32,6 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/yedi/ros_ws/src/learning_ros_external_pkgs_noetic/baxter_simulator/baxter_gazebo/include"
   "/home/yedi/ros_ws/devel/include"
-  "/home/yedi/ros_ws/src/learning_ros_external_pkgs_noetic/gazebo_ros_pkgs/gazebo_ros_control/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/gazebo-11"
   "/usr/include/bullet"
@@ -55,10 +54,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/yedi/ros_ws/build/learning_ros_external_pkgs_noetic/gazebo_ros_pkgs/gazebo_ros/CMakeFiles/gazebo_ros_api_plugin.dir/DependInfo.cmake"
-  "/home/yedi/ros_ws/build/learning_ros_external_pkgs_noetic/gazebo_ros_pkgs/gazebo_ros/CMakeFiles/gazebo_ros_paths_plugin.dir/DependInfo.cmake"
-  "/home/yedi/ros_ws/build/learning_ros_external_pkgs_noetic/gazebo_ros_pkgs/gazebo_ros_control/CMakeFiles/default_robot_hw_sim.dir/DependInfo.cmake"
-  "/home/yedi/ros_ws/build/learning_ros_external_pkgs_noetic/gazebo_ros_pkgs/gazebo_ros_control/CMakeFiles/gazebo_ros_control.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -65,53 +65,53 @@ learning_ros_noetic/Part_5/arm7dof/arm7dof_traj_as/CMakeFiles/arm7dof_traj_as_ge
 
 /home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajAction.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajAction.py: /home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajAction.msg
-/home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajAction.py: /home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg
-/home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajAction.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajAction.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajAction.py: /opt/ros/noetic/share/trajectory_msgs/msg/JointTrajectoryPoint.msg
-/home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajAction.py: /home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajResult.msg
 /home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajAction.py: /home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionFeedback.msg
+/home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajAction.py: /home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajResult.msg
+/home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajAction.py: /opt/ros/noetic/share/trajectory_msgs/msg/JointTrajectoryPoint.msg
+/home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajAction.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajAction.py: /opt/ros/noetic/share/trajectory_msgs/msg/JointTrajectory.msg
+/home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajAction.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 /home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajAction.py: /home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionResult.msg
+/home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajAction.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
 /home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajAction.py: /home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajFeedback.msg
 /home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajAction.py: /home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionGoal.msg
-/home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajAction.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-/home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajAction.py: /opt/ros/noetic/share/trajectory_msgs/msg/JointTrajectory.msg
+/home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajAction.py: /home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yedi/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG arm7dof_traj_as/trajAction"
 	cd /home/yedi/ros_ws/build/learning_ros_noetic/Part_5/arm7dof/arm7dof_traj_as && ../../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajAction.msg -Iarm7dof_traj_as:/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg -Iroscpp:/opt/ros/noetic/share/roscpp/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Iactionlib:/opt/ros/noetic/share/actionlib/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p arm7dof_traj_as -o /home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg
 
 /home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajActionGoal.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajActionGoal.py: /home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionGoal.msg
-/home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajActionGoal.py: /home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg
-/home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajActionGoal.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajActionGoal.py: /opt/ros/noetic/share/trajectory_msgs/msg/JointTrajectoryPoint.msg
-/home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajActionGoal.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajActionGoal.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajActionGoal.py: /opt/ros/noetic/share/trajectory_msgs/msg/JointTrajectory.msg
+/home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajActionGoal.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajActionGoal.py: /home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yedi/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG arm7dof_traj_as/trajActionGoal"
 	cd /home/yedi/ros_ws/build/learning_ros_noetic/Part_5/arm7dof/arm7dof_traj_as && ../../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionGoal.msg -Iarm7dof_traj_as:/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg -Iroscpp:/opt/ros/noetic/share/roscpp/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Iactionlib:/opt/ros/noetic/share/actionlib/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p arm7dof_traj_as -o /home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg
 
 /home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajActionResult.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajActionResult.py: /home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionResult.msg
+/home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajActionResult.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajActionResult.py: /home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajResult.msg
 /home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajActionResult.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
 /home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajActionResult.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajActionResult.py: /home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajResult.msg
-/home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajActionResult.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yedi/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG arm7dof_traj_as/trajActionResult"
 	cd /home/yedi/ros_ws/build/learning_ros_noetic/Part_5/arm7dof/arm7dof_traj_as && ../../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionResult.msg -Iarm7dof_traj_as:/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg -Iroscpp:/opt/ros/noetic/share/roscpp/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Iactionlib:/opt/ros/noetic/share/actionlib/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p arm7dof_traj_as -o /home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg
 
 /home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajActionFeedback.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajActionFeedback.py: /home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionFeedback.msg
+/home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajActionFeedback.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajActionFeedback.py: /home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajFeedback.msg
 /home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajActionFeedback.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
 /home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajActionFeedback.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajActionFeedback.py: /home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajFeedback.msg
-/home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajActionFeedback.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yedi/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python from MSG arm7dof_traj_as/trajActionFeedback"
 	cd /home/yedi/ros_ws/build/learning_ros_noetic/Part_5/arm7dof/arm7dof_traj_as && ../../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajActionFeedback.msg -Iarm7dof_traj_as:/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg -Iroscpp:/opt/ros/noetic/share/roscpp/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Iactionlib:/opt/ros/noetic/share/actionlib/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p arm7dof_traj_as -o /home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg
 
 /home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajGoal.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajGoal.py: /home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg
-/home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajGoal.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajGoal.py: /opt/ros/noetic/share/trajectory_msgs/msg/JointTrajectoryPoint.msg
 /home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajGoal.py: /opt/ros/noetic/share/trajectory_msgs/msg/JointTrajectory.msg
+/home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajGoal.py: /opt/ros/noetic/share/trajectory_msgs/msg/JointTrajectoryPoint.msg
+/home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg/_trajGoal.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yedi/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python from MSG arm7dof_traj_as/trajGoal"
 	cd /home/yedi/ros_ws/build/learning_ros_noetic/Part_5/arm7dof/arm7dof_traj_as && ../../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg/trajGoal.msg -Iarm7dof_traj_as:/home/yedi/ros_ws/devel/share/arm7dof_traj_as/msg -Iroscpp:/opt/ros/noetic/share/roscpp/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Iactionlib:/opt/ros/noetic/share/actionlib/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p arm7dof_traj_as -o /home/yedi/ros_ws/devel/lib/python3/dist-packages/arm7dof_traj_as/msg
 

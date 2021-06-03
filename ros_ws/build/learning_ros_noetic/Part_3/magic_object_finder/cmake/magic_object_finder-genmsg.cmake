@@ -2,7 +2,7 @@
 
 message(STATUS "magic_object_finder: 7 messages, 0 services")
 
-set(MSG_I_FLAGS "-Imagic_object_finder:/home/yedi/ros_ws/devel/share/magic_object_finder/msg;-Iroscpp:/opt/ros/noetic/share/roscpp/cmake/../msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg;-Igazebo_msgs:/home/yedi/ros_ws/src/learning_ros_external_pkgs_noetic/gazebo_ros_pkgs/gazebo_msgs/msg;-Iactionlib:/opt/ros/noetic/share/actionlib/cmake/../msg;-Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg;-Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg;-Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Imagic_object_finder:/home/yedi/ros_ws/devel/share/magic_object_finder/msg;-Iroscpp:/opt/ros/noetic/share/roscpp/cmake/../msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg;-Igazebo_msgs:/opt/ros/noetic/share/gazebo_msgs/cmake/../msg;-Iactionlib:/opt/ros/noetic/share/actionlib/cmake/../msg;-Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg;-Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg;-Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -19,22 +19,22 @@ add_custom_target(magic_object_finder_generate_messages ALL)
 
 get_filename_component(_filename "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderAction.msg" NAME_WE)
 add_custom_target(_magic_object_finder_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "magic_object_finder" "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderAction.msg" "geometry_msgs/PoseStamped:magic_object_finder/magicObjectFinderActionGoal:geometry_msgs/Point:magic_object_finder/magicObjectFinderResult:magic_object_finder/magicObjectFinderFeedback:geometry_msgs/Quaternion:magic_object_finder/magicObjectFinderActionFeedback:geometry_msgs/Pose:actionlib_msgs/GoalStatus:magic_object_finder/magicObjectFinderActionResult:actionlib_msgs/GoalID:magic_object_finder/magicObjectFinderGoal:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "magic_object_finder" "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderAction.msg" "std_msgs/Header:magic_object_finder/magicObjectFinderResult:magic_object_finder/magicObjectFinderFeedback:geometry_msgs/Quaternion:actionlib_msgs/GoalID:geometry_msgs/PoseStamped:geometry_msgs/Point:magic_object_finder/magicObjectFinderActionFeedback:magic_object_finder/magicObjectFinderGoal:magic_object_finder/magicObjectFinderActionResult:geometry_msgs/Pose:actionlib_msgs/GoalStatus:magic_object_finder/magicObjectFinderActionGoal"
 )
 
 get_filename_component(_filename "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionGoal.msg" NAME_WE)
 add_custom_target(_magic_object_finder_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "magic_object_finder" "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionGoal.msg" "actionlib_msgs/GoalID:magic_object_finder/magicObjectFinderGoal:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "magic_object_finder" "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionGoal.msg" "std_msgs/Header:actionlib_msgs/GoalID:magic_object_finder/magicObjectFinderGoal"
 )
 
 get_filename_component(_filename "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionResult.msg" NAME_WE)
 add_custom_target(_magic_object_finder_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "magic_object_finder" "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionResult.msg" "geometry_msgs/PoseStamped:geometry_msgs/Point:magic_object_finder/magicObjectFinderResult:geometry_msgs/Quaternion:geometry_msgs/Pose:actionlib_msgs/GoalStatus:actionlib_msgs/GoalID:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "magic_object_finder" "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionResult.msg" "std_msgs/Header:magic_object_finder/magicObjectFinderResult:geometry_msgs/Quaternion:actionlib_msgs/GoalID:geometry_msgs/PoseStamped:geometry_msgs/Point:geometry_msgs/Pose:actionlib_msgs/GoalStatus"
 )
 
 get_filename_component(_filename "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionFeedback.msg" NAME_WE)
 add_custom_target(_magic_object_finder_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "magic_object_finder" "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionFeedback.msg" "magic_object_finder/magicObjectFinderFeedback:actionlib_msgs/GoalStatus:std_msgs/Header:actionlib_msgs/GoalID"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "magic_object_finder" "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionFeedback.msg" "std_msgs/Header:magic_object_finder/magicObjectFinderFeedback:actionlib_msgs/GoalStatus:actionlib_msgs/GoalID"
 )
 
 get_filename_component(_filename "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderGoal.msg" NAME_WE)
@@ -44,7 +44,7 @@ add_custom_target(_magic_object_finder_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderResult.msg" NAME_WE)
 add_custom_target(_magic_object_finder_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "magic_object_finder" "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderResult.msg" "geometry_msgs/PoseStamped:geometry_msgs/Quaternion:geometry_msgs/Pose:geometry_msgs/Point:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "magic_object_finder" "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderResult.msg" "std_msgs/Header:geometry_msgs/Quaternion:geometry_msgs/PoseStamped:geometry_msgs/Point:geometry_msgs/Pose"
 )
 
 get_filename_component(_filename "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderFeedback.msg" NAME_WE)
@@ -61,25 +61,25 @@ add_custom_target(_magic_object_finder_generate_messages_check_deps_${_filename}
 _generate_msg_cpp(magic_object_finder
   "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderAction.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderResult.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderResult.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionFeedback.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderGoal.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/magic_object_finder
 )
 _generate_msg_cpp(magic_object_finder
   "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/magic_object_finder
 )
 _generate_msg_cpp(magic_object_finder
   "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/magic_object_finder
 )
 _generate_msg_cpp(magic_object_finder
   "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/magic_object_finder
 )
 _generate_msg_cpp(magic_object_finder
@@ -91,7 +91,7 @@ _generate_msg_cpp(magic_object_finder
 _generate_msg_cpp(magic_object_finder
   "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/magic_object_finder
 )
 _generate_msg_cpp(magic_object_finder
@@ -142,25 +142,25 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS magic_object_finder_generate_messag
 _generate_msg_eus(magic_object_finder
   "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderAction.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderResult.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderResult.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionFeedback.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderGoal.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/magic_object_finder
 )
 _generate_msg_eus(magic_object_finder
   "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/magic_object_finder
 )
 _generate_msg_eus(magic_object_finder
   "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/magic_object_finder
 )
 _generate_msg_eus(magic_object_finder
   "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/magic_object_finder
 )
 _generate_msg_eus(magic_object_finder
@@ -172,7 +172,7 @@ _generate_msg_eus(magic_object_finder
 _generate_msg_eus(magic_object_finder
   "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/magic_object_finder
 )
 _generate_msg_eus(magic_object_finder
@@ -223,25 +223,25 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS magic_object_finder_generate_messag
 _generate_msg_lisp(magic_object_finder
   "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderAction.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderResult.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderResult.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionFeedback.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderGoal.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/magic_object_finder
 )
 _generate_msg_lisp(magic_object_finder
   "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/magic_object_finder
 )
 _generate_msg_lisp(magic_object_finder
   "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/magic_object_finder
 )
 _generate_msg_lisp(magic_object_finder
   "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/magic_object_finder
 )
 _generate_msg_lisp(magic_object_finder
@@ -253,7 +253,7 @@ _generate_msg_lisp(magic_object_finder
 _generate_msg_lisp(magic_object_finder
   "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/magic_object_finder
 )
 _generate_msg_lisp(magic_object_finder
@@ -304,25 +304,25 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS magic_object_finder_generate_messag
 _generate_msg_nodejs(magic_object_finder
   "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderAction.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderResult.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderResult.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionFeedback.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderGoal.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/magic_object_finder
 )
 _generate_msg_nodejs(magic_object_finder
   "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/magic_object_finder
 )
 _generate_msg_nodejs(magic_object_finder
   "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/magic_object_finder
 )
 _generate_msg_nodejs(magic_object_finder
   "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/magic_object_finder
 )
 _generate_msg_nodejs(magic_object_finder
@@ -334,7 +334,7 @@ _generate_msg_nodejs(magic_object_finder
 _generate_msg_nodejs(magic_object_finder
   "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/magic_object_finder
 )
 _generate_msg_nodejs(magic_object_finder
@@ -385,25 +385,25 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS magic_object_finder_generate_messag
 _generate_msg_py(magic_object_finder
   "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderAction.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderResult.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderResult.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionFeedback.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderGoal.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/magic_object_finder
 )
 _generate_msg_py(magic_object_finder
   "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/magic_object_finder
 )
 _generate_msg_py(magic_object_finder
   "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/magic_object_finder
 )
 _generate_msg_py(magic_object_finder
   "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/magic_object_finder
 )
 _generate_msg_py(magic_object_finder
@@ -415,7 +415,7 @@ _generate_msg_py(magic_object_finder
 _generate_msg_py(magic_object_finder
   "/home/yedi/ros_ws/devel/share/magic_object_finder/msg/magicObjectFinderResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/magic_object_finder
 )
 _generate_msg_py(magic_object_finder

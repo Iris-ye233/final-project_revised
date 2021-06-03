@@ -61,9 +61,9 @@ learning_ros_noetic/Part_2/example_interactive_marker/CMakeFiles/example_interac
 /home/yedi/ros_ws/devel/lib/python3/dist-packages/example_interactive_marker/srv/_ImNodeSvcMsg.py: /home/yedi/ros_ws/src/learning_ros_noetic/Part_2/example_interactive_marker/srv/ImNodeSvcMsg.srv
 /home/yedi/ros_ws/devel/lib/python3/dist-packages/example_interactive_marker/srv/_ImNodeSvcMsg.py: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
 /home/yedi/ros_ws/devel/lib/python3/dist-packages/example_interactive_marker/srv/_ImNodeSvcMsg.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/yedi/ros_ws/devel/lib/python3/dist-packages/example_interactive_marker/srv/_ImNodeSvcMsg.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/yedi/ros_ws/devel/lib/python3/dist-packages/example_interactive_marker/srv/_ImNodeSvcMsg.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/yedi/ros_ws/devel/lib/python3/dist-packages/example_interactive_marker/srv/_ImNodeSvcMsg.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/yedi/ros_ws/devel/lib/python3/dist-packages/example_interactive_marker/srv/_ImNodeSvcMsg.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yedi/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV example_interactive_marker/ImNodeSvcMsg"
 	cd /home/yedi/ros_ws/build/learning_ros_noetic/Part_2/example_interactive_marker && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/yedi/ros_ws/src/learning_ros_noetic/Part_2/example_interactive_marker/srv/ImNodeSvcMsg.srv -Iroscpp:/opt/ros/noetic/share/roscpp/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Itf:/opt/ros/noetic/share/tf/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -p example_interactive_marker -o /home/yedi/ros_ws/devel/lib/python3/dist-packages/example_interactive_marker/srv
 

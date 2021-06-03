@@ -87,7 +87,7 @@ kinematics_EXTERNAL_OBJECTS =
 /home/yedi/ros_ws/devel/lib/baxter_sim_kinematics/kinematics: /opt/ros/noetic/lib/libmessage_filters.so
 /home/yedi/ros_ws/devel/lib/baxter_sim_kinematics/kinematics: /opt/ros/noetic/lib/libtf2.so
 /home/yedi/ros_ws/devel/lib/baxter_sim_kinematics/kinematics: /opt/ros/noetic/lib/libkdl_parser.so
-/home/yedi/ros_ws/devel/lib/baxter_sim_kinematics/kinematics: /usr/lib/liborocos-kdl.so
+/home/yedi/ros_ws/devel/lib/baxter_sim_kinematics/kinematics: /usr/local/lib/liborocos-kdl.so
 /home/yedi/ros_ws/devel/lib/baxter_sim_kinematics/kinematics: /opt/ros/noetic/lib/liburdf.so
 /home/yedi/ros_ws/devel/lib/baxter_sim_kinematics/kinematics: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
 /home/yedi/ros_ws/devel/lib/baxter_sim_kinematics/kinematics: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so
@@ -129,7 +129,7 @@ kinematics_EXTERNAL_OBJECTS =
 /home/yedi/ros_ws/devel/lib/baxter_sim_kinematics/kinematics: /opt/ros/noetic/lib/libmessage_filters.so
 /home/yedi/ros_ws/devel/lib/baxter_sim_kinematics/kinematics: /opt/ros/noetic/lib/libtf2.so
 /home/yedi/ros_ws/devel/lib/baxter_sim_kinematics/kinematics: /opt/ros/noetic/lib/libkdl_parser.so
-/home/yedi/ros_ws/devel/lib/baxter_sim_kinematics/kinematics: /usr/lib/liborocos-kdl.so
+/home/yedi/ros_ws/devel/lib/baxter_sim_kinematics/kinematics: /usr/local/lib/liborocos-kdl.so
 /home/yedi/ros_ws/devel/lib/baxter_sim_kinematics/kinematics: /opt/ros/noetic/lib/liburdf.so
 /home/yedi/ros_ws/devel/lib/baxter_sim_kinematics/kinematics: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
 /home/yedi/ros_ws/devel/lib/baxter_sim_kinematics/kinematics: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so

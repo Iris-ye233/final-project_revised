@@ -1,8 +1,0 @@
-prefix=/home/yedi/ros_ws/devel
-
-Name: gazebo_dev
-Description: Description of gazebo_dev
-Version: 2.9.1
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

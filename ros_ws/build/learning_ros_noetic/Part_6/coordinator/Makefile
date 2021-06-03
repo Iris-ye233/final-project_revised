@@ -80,6 +80,16 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -112,16 +122,6 @@ test:
 test/fast: test
 
 .PHONY : test/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
 
 # Special rule for the target install
 install: preinstall
@@ -543,21 +543,6 @@ coordinator_generate_messages_nodejs/fast:
 .PHONY : coordinator_generate_messages_nodejs/fast
 
 # Convenience name for target.
-learning_ros_noetic/Part_6/coordinator/CMakeFiles/dropoff_block_client.dir/rule:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_6/coordinator/CMakeFiles/dropoff_block_client.dir/rule
-.PHONY : learning_ros_noetic/Part_6/coordinator/CMakeFiles/dropoff_block_client.dir/rule
-
-# Convenience name for target.
-dropoff_block_client: learning_ros_noetic/Part_6/coordinator/CMakeFiles/dropoff_block_client.dir/rule
-
-.PHONY : dropoff_block_client
-
-# fast build rule for target.
-dropoff_block_client/fast:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_6/coordinator/CMakeFiles/dropoff_block_client.dir/build.make learning_ros_noetic/Part_6/coordinator/CMakeFiles/dropoff_block_client.dir/build
-.PHONY : dropoff_block_client/fast
-
-# Convenience name for target.
 learning_ros_noetic/Part_6/coordinator/CMakeFiles/coordinator_gennodejs.dir/rule:
 	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_6/coordinator/CMakeFiles/coordinator_gennodejs.dir/rule
 .PHONY : learning_ros_noetic/Part_6/coordinator/CMakeFiles/coordinator_gennodejs.dir/rule
@@ -573,19 +558,19 @@ coordinator_gennodejs/fast:
 .PHONY : coordinator_gennodejs/fast
 
 # Convenience name for target.
-learning_ros_noetic/Part_6/coordinator/CMakeFiles/acquire_block_client.dir/rule:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_6/coordinator/CMakeFiles/acquire_block_client.dir/rule
-.PHONY : learning_ros_noetic/Part_6/coordinator/CMakeFiles/acquire_block_client.dir/rule
+learning_ros_noetic/Part_6/coordinator/CMakeFiles/grab_coke_can_client.dir/rule:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_6/coordinator/CMakeFiles/grab_coke_can_client.dir/rule
+.PHONY : learning_ros_noetic/Part_6/coordinator/CMakeFiles/grab_coke_can_client.dir/rule
 
 # Convenience name for target.
-acquire_block_client: learning_ros_noetic/Part_6/coordinator/CMakeFiles/acquire_block_client.dir/rule
+grab_coke_can_client: learning_ros_noetic/Part_6/coordinator/CMakeFiles/grab_coke_can_client.dir/rule
 
-.PHONY : acquire_block_client
+.PHONY : grab_coke_can_client
 
 # fast build rule for target.
-acquire_block_client/fast:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_6/coordinator/CMakeFiles/acquire_block_client.dir/build.make learning_ros_noetic/Part_6/coordinator/CMakeFiles/acquire_block_client.dir/build
-.PHONY : acquire_block_client/fast
+grab_coke_can_client/fast:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_6/coordinator/CMakeFiles/grab_coke_can_client.dir/build.make learning_ros_noetic/Part_6/coordinator/CMakeFiles/grab_coke_can_client.dir/build
+.PHONY : grab_coke_can_client/fast
 
 # Convenience name for target.
 learning_ros_noetic/Part_6/coordinator/CMakeFiles/command_bundler.dir/rule:
@@ -603,6 +588,21 @@ command_bundler/fast:
 .PHONY : command_bundler/fast
 
 # Convenience name for target.
+learning_ros_noetic/Part_6/coordinator/CMakeFiles/dropoff_coke_can_client.dir/rule:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_6/coordinator/CMakeFiles/dropoff_coke_can_client.dir/rule
+.PHONY : learning_ros_noetic/Part_6/coordinator/CMakeFiles/dropoff_coke_can_client.dir/rule
+
+# Convenience name for target.
+dropoff_coke_can_client: learning_ros_noetic/Part_6/coordinator/CMakeFiles/dropoff_coke_can_client.dir/rule
+
+.PHONY : dropoff_coke_can_client
+
+# fast build rule for target.
+dropoff_coke_can_client/fast:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_6/coordinator/CMakeFiles/dropoff_coke_can_client.dir/build.make learning_ros_noetic/Part_6/coordinator/CMakeFiles/dropoff_coke_can_client.dir/build
+.PHONY : dropoff_coke_can_client/fast
+
+# Convenience name for target.
 learning_ros_noetic/Part_6/coordinator/CMakeFiles/open_loop_yaw_service.dir/rule:
 	cd /home/yedi/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_ros_noetic/Part_6/coordinator/CMakeFiles/open_loop_yaw_service.dir/rule
 .PHONY : learning_ros_noetic/Part_6/coordinator/CMakeFiles/open_loop_yaw_service.dir/rule
@@ -616,33 +616,6 @@ open_loop_yaw_service: learning_ros_noetic/Part_6/coordinator/CMakeFiles/open_lo
 open_loop_yaw_service/fast:
 	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_6/coordinator/CMakeFiles/open_loop_yaw_service.dir/build.make learning_ros_noetic/Part_6/coordinator/CMakeFiles/open_loop_yaw_service.dir/build
 .PHONY : open_loop_yaw_service/fast
-
-src/acquire_block_client.o: src/acquire_block_client.cpp.o
-
-.PHONY : src/acquire_block_client.o
-
-# target to build an object file
-src/acquire_block_client.cpp.o:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_6/coordinator/CMakeFiles/acquire_block_client.dir/build.make learning_ros_noetic/Part_6/coordinator/CMakeFiles/acquire_block_client.dir/src/acquire_block_client.cpp.o
-.PHONY : src/acquire_block_client.cpp.o
-
-src/acquire_block_client.i: src/acquire_block_client.cpp.i
-
-.PHONY : src/acquire_block_client.i
-
-# target to preprocess a source file
-src/acquire_block_client.cpp.i:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_6/coordinator/CMakeFiles/acquire_block_client.dir/build.make learning_ros_noetic/Part_6/coordinator/CMakeFiles/acquire_block_client.dir/src/acquire_block_client.cpp.i
-.PHONY : src/acquire_block_client.cpp.i
-
-src/acquire_block_client.s: src/acquire_block_client.cpp.s
-
-.PHONY : src/acquire_block_client.s
-
-# target to generate assembly for a file
-src/acquire_block_client.cpp.s:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_6/coordinator/CMakeFiles/acquire_block_client.dir/build.make learning_ros_noetic/Part_6/coordinator/CMakeFiles/acquire_block_client.dir/src/acquire_block_client.cpp.s
-.PHONY : src/acquire_block_client.cpp.s
 
 src/command_bundler.o: src/command_bundler.cpp.o
 
@@ -698,32 +671,32 @@ src/coordinator_action_client_tester.cpp.s:
 	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_6/coordinator/CMakeFiles/coordinator_action_client_tester.dir/build.make learning_ros_noetic/Part_6/coordinator/CMakeFiles/coordinator_action_client_tester.dir/src/coordinator_action_client_tester.cpp.s
 .PHONY : src/coordinator_action_client_tester.cpp.s
 
-src/dropoff_block_client.o: src/dropoff_block_client.cpp.o
+src/dropoff_coke_can_client.o: src/dropoff_coke_can_client.cpp.o
 
-.PHONY : src/dropoff_block_client.o
+.PHONY : src/dropoff_coke_can_client.o
 
 # target to build an object file
-src/dropoff_block_client.cpp.o:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_6/coordinator/CMakeFiles/dropoff_block_client.dir/build.make learning_ros_noetic/Part_6/coordinator/CMakeFiles/dropoff_block_client.dir/src/dropoff_block_client.cpp.o
-.PHONY : src/dropoff_block_client.cpp.o
+src/dropoff_coke_can_client.cpp.o:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_6/coordinator/CMakeFiles/dropoff_coke_can_client.dir/build.make learning_ros_noetic/Part_6/coordinator/CMakeFiles/dropoff_coke_can_client.dir/src/dropoff_coke_can_client.cpp.o
+.PHONY : src/dropoff_coke_can_client.cpp.o
 
-src/dropoff_block_client.i: src/dropoff_block_client.cpp.i
+src/dropoff_coke_can_client.i: src/dropoff_coke_can_client.cpp.i
 
-.PHONY : src/dropoff_block_client.i
+.PHONY : src/dropoff_coke_can_client.i
 
 # target to preprocess a source file
-src/dropoff_block_client.cpp.i:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_6/coordinator/CMakeFiles/dropoff_block_client.dir/build.make learning_ros_noetic/Part_6/coordinator/CMakeFiles/dropoff_block_client.dir/src/dropoff_block_client.cpp.i
-.PHONY : src/dropoff_block_client.cpp.i
+src/dropoff_coke_can_client.cpp.i:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_6/coordinator/CMakeFiles/dropoff_coke_can_client.dir/build.make learning_ros_noetic/Part_6/coordinator/CMakeFiles/dropoff_coke_can_client.dir/src/dropoff_coke_can_client.cpp.i
+.PHONY : src/dropoff_coke_can_client.cpp.i
 
-src/dropoff_block_client.s: src/dropoff_block_client.cpp.s
+src/dropoff_coke_can_client.s: src/dropoff_coke_can_client.cpp.s
 
-.PHONY : src/dropoff_block_client.s
+.PHONY : src/dropoff_coke_can_client.s
 
 # target to generate assembly for a file
-src/dropoff_block_client.cpp.s:
-	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_6/coordinator/CMakeFiles/dropoff_block_client.dir/build.make learning_ros_noetic/Part_6/coordinator/CMakeFiles/dropoff_block_client.dir/src/dropoff_block_client.cpp.s
-.PHONY : src/dropoff_block_client.cpp.s
+src/dropoff_coke_can_client.cpp.s:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_6/coordinator/CMakeFiles/dropoff_coke_can_client.dir/build.make learning_ros_noetic/Part_6/coordinator/CMakeFiles/dropoff_coke_can_client.dir/src/dropoff_coke_can_client.cpp.s
+.PHONY : src/dropoff_coke_can_client.cpp.s
 
 src/example_cart_move_client.o: src/example_cart_move_client.cpp.o
 
@@ -778,6 +751,33 @@ src/fetch_and_stack_client.s: src/fetch_and_stack_client.cpp.s
 src/fetch_and_stack_client.cpp.s:
 	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_6/coordinator/CMakeFiles/fetch_and_stack_client.dir/build.make learning_ros_noetic/Part_6/coordinator/CMakeFiles/fetch_and_stack_client.dir/src/fetch_and_stack_client.cpp.s
 .PHONY : src/fetch_and_stack_client.cpp.s
+
+src/grab_coke_can_client.o: src/grab_coke_can_client.cpp.o
+
+.PHONY : src/grab_coke_can_client.o
+
+# target to build an object file
+src/grab_coke_can_client.cpp.o:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_6/coordinator/CMakeFiles/grab_coke_can_client.dir/build.make learning_ros_noetic/Part_6/coordinator/CMakeFiles/grab_coke_can_client.dir/src/grab_coke_can_client.cpp.o
+.PHONY : src/grab_coke_can_client.cpp.o
+
+src/grab_coke_can_client.i: src/grab_coke_can_client.cpp.i
+
+.PHONY : src/grab_coke_can_client.i
+
+# target to preprocess a source file
+src/grab_coke_can_client.cpp.i:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_6/coordinator/CMakeFiles/grab_coke_can_client.dir/build.make learning_ros_noetic/Part_6/coordinator/CMakeFiles/grab_coke_can_client.dir/src/grab_coke_can_client.cpp.i
+.PHONY : src/grab_coke_can_client.cpp.i
+
+src/grab_coke_can_client.s: src/grab_coke_can_client.cpp.s
+
+.PHONY : src/grab_coke_can_client.s
+
+# target to generate assembly for a file
+src/grab_coke_can_client.cpp.s:
+	cd /home/yedi/ros_ws/build && $(MAKE) -f learning_ros_noetic/Part_6/coordinator/CMakeFiles/grab_coke_can_client.dir/build.make learning_ros_noetic/Part_6/coordinator/CMakeFiles/grab_coke_can_client.dir/src/grab_coke_can_client.cpp.s
+.PHONY : src/grab_coke_can_client.cpp.s
 
 src/open_loop_nav_service.o: src/open_loop_nav_service.cpp.o
 
@@ -868,6 +868,7 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
@@ -896,31 +897,30 @@ help:
 	@echo "... open_loop_nav_service"
 	@echo "... coordinator_genlisp"
 	@echo "... coordinator_generate_messages_nodejs"
-	@echo "... list_install_components"
-	@echo "... dropoff_block_client"
 	@echo "... install"
 	@echo "... coordinator_gennodejs"
-	@echo "... acquire_block_client"
+	@echo "... grab_coke_can_client"
 	@echo "... command_bundler"
+	@echo "... dropoff_coke_can_client"
 	@echo "... open_loop_yaw_service"
-	@echo "... src/acquire_block_client.o"
-	@echo "... src/acquire_block_client.i"
-	@echo "... src/acquire_block_client.s"
 	@echo "... src/command_bundler.o"
 	@echo "... src/command_bundler.i"
 	@echo "... src/command_bundler.s"
 	@echo "... src/coordinator_action_client_tester.o"
 	@echo "... src/coordinator_action_client_tester.i"
 	@echo "... src/coordinator_action_client_tester.s"
-	@echo "... src/dropoff_block_client.o"
-	@echo "... src/dropoff_block_client.i"
-	@echo "... src/dropoff_block_client.s"
+	@echo "... src/dropoff_coke_can_client.o"
+	@echo "... src/dropoff_coke_can_client.i"
+	@echo "... src/dropoff_coke_can_client.s"
 	@echo "... src/example_cart_move_client.o"
 	@echo "... src/example_cart_move_client.i"
 	@echo "... src/example_cart_move_client.s"
 	@echo "... src/fetch_and_stack_client.o"
 	@echo "... src/fetch_and_stack_client.i"
 	@echo "... src/fetch_and_stack_client.s"
+	@echo "... src/grab_coke_can_client.o"
+	@echo "... src/grab_coke_can_client.i"
+	@echo "... src/grab_coke_can_client.s"
 	@echo "... src/open_loop_nav_service.o"
 	@echo "... src/open_loop_nav_service.i"
 	@echo "... src/open_loop_nav_service.s"

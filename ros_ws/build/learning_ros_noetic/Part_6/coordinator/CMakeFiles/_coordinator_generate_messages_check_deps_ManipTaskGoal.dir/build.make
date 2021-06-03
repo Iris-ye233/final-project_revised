@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/yedi/ros_ws/build
 include learning_ros_noetic/Part_6/coordinator/CMakeFiles/_coordinator_generate_messages_check_deps_ManipTaskGoal.dir/progress.make
 
 learning_ros_noetic/Part_6/coordinator/CMakeFiles/_coordinator_generate_messages_check_deps_ManipTaskGoal:
-	cd /home/yedi/ros_ws/build/learning_ros_noetic/Part_6/coordinator && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py coordinator /home/yedi/ros_ws/devel/share/coordinator/msg/ManipTaskGoal.msg geometry_msgs/Quaternion:geometry_msgs/Point:std_msgs/Header:geometry_msgs/PoseStamped:geometry_msgs/Pose
+	cd /home/yedi/ros_ws/build/learning_ros_noetic/Part_6/coordinator && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py coordinator /home/yedi/ros_ws/devel/share/coordinator/msg/ManipTaskGoal.msg geometry_msgs/Pose:geometry_msgs/PoseStamped:geometry_msgs/Point:geometry_msgs/Quaternion:std_msgs/Header
 
 _coordinator_generate_messages_check_deps_ManipTaskGoal: learning_ros_noetic/Part_6/coordinator/CMakeFiles/_coordinator_generate_messages_check_deps_ManipTaskGoal
 _coordinator_generate_messages_check_deps_ManipTaskGoal: learning_ros_noetic/Part_6/coordinator/CMakeFiles/_coordinator_generate_messages_check_deps_ManipTaskGoal.dir/build.make
